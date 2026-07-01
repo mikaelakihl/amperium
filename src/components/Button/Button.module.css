@@ -58,8 +58,22 @@
   color: var(--color-green-1000);
 }
 
+.link {
+  background-color: transparent;
+  color: var(--color-action-primary);
+  padding: 0;
+  min-height: unset;
+  min-width: unset;
+  border-radius: 0;
+}
+
 .button.ghost:hover:not(:disabled) {
   background-color: var(--color-green-100);
+}
+
+.button.link:hover:not(:disabled) {
+  color: var(--color-action-primary-hover);
+  text-decoration: underline;
 }
 
 .button.primary:hover:not(:disabled) {

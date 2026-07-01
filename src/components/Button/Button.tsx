@@ -1,8 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
-import styles from './Button.module.css';
-
-type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'ghost';
-type ButtonSize = 'sm' | 'md' | 'lg';
+import { getButtonClassNames, ButtonIcon } from './Button.helpers';
+import type { ButtonVariant, ButtonSize } from './Button.helpers';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -34,30 +32,13 @@ export function Button({
       {...props}
       type={type}
       disabled={loading || disabled}
-      className={[
-        styles.button,
-        styles[size],
-        styles[variant],
-        fullWidth && styles.fullWidth,
-        iconOnly && styles.iconOnly,
-        className,
-      ]
-        .filter(Boolean)
-        .join(' ')}
+      className={getButtonClassNames({ size, variant, fullWidth, iconOnly, className })}
     >
-      {!loading && iconLeft && (
-        <span className={styles.iconLeft}>
-          <span className={styles.icon}>{iconLeft}</span>
-        </span>
-      )}
+      {!loading && iconLeft && <ButtonIcon position="left">{iconLeft}</ButtonIcon>}
 
       {loading ? 'Loading...' : children}
 
-      {!loading && iconRight && (
-        <span className={styles.iconRight}>
-          <span className={styles.icon}>{iconRight}</span>
-        </span>
-      )}
+      {!loading && iconRight && <ButtonIcon position="right">{iconRight}</ButtonIcon>}
     </button>
   );
 }
