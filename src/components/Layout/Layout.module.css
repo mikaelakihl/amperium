@@ -10,3 +10,8 @@
 .logo {
   color: aliceblue;
 }
+
+.navContainer {
+  display: flex;
+  gap: var(--space-sm);
+}
