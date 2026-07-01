@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router';
 import './index.css';
 import 'modern-normalize/modern-normalize.css';
 import './styles/global.css';
+import './i18n/i18n';
 import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(

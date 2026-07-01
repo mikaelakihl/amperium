@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Hem",
+    "about": "Om oss",
+    "services": "Tjänster",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Hem"
+  },
+  "about": {
+    "title": "Om oss"
+  },
+  "services": {
+    "title": "Tjänster"
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "loading": "Laddar..."
+}

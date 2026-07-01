@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { Hamburger } from '../Hamburger/Hamburger';
 import styles from './Navbar.module.css';
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <nav className={styles.navbar}>
@@ -21,7 +23,7 @@ export function Navbar() {
                 to="/"
                 onClick={() => setMenuOpen(false)}
               >
-                Hem
+                {t('nav.home')}
               </Link>
             </li>
             <li>
@@ -30,7 +32,7 @@ export function Navbar() {
                 to="/about"
                 onClick={() => setMenuOpen(false)}
               >
-                Om oss
+                {t('nav.about')}
               </Link>
             </li>
             <li>
@@ -39,7 +41,7 @@ export function Navbar() {
                 to="/services"
                 onClick={() => setMenuOpen(false)}
               >
-                Tjänster
+                {t('nav.services')}
               </Link>
             </li>
             <li>
@@ -48,7 +50,7 @@ export function Navbar() {
                 to="/contact"
                 onClick={() => setMenuOpen(false)}
               >
-                Kontakt
+                {t('nav.contact')}
               </Link>
             </li>
           </ul>
