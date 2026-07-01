@@ -40,10 +40,5 @@
 
   .actionButton {
     display: block;
-    font: inherit;
-    color: var(--color-text-primary);
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
   }
 }

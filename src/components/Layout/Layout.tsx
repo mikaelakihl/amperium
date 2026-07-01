@@ -3,8 +3,12 @@ import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { Outlet } from 'react-router';
 import styles from './Layout.module.css';
 import { NavbarDesktop } from '../NavbarDesktop/NavbarDesktop';
+import { Button } from '../Button/Button';
+import { PhoneOutgoing } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function Layout() {
+  const { t } = useTranslation();
   return (
     <div>
       <header className={styles.header}>
@@ -14,7 +18,11 @@ export function Layout() {
             <NavbarDesktop />
           </div>
           <LanguageSwitcher />
-          <button className={styles.actionButton}>Button</button>
+          <div className={styles.actionButton}>
+            <Button iconLeft={<PhoneOutgoing size={16} />}>
+              {t('nav.callUs')}
+            </Button>
+          </div>
           <div className={styles.mobileNav}>
             <Navbar />
           </div>
