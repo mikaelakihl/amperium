@@ -21,17 +21,23 @@ export function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className={`${styles.link} text-navigation-sm`} to="/om-oss">
+              <Link className={`${styles.link} text-navigation-sm`} to="/about">
                 Om oss
               </Link>
             </li>
             <li>
-              <Link className={`${styles.link} text-navigation-sm`} to="/tjanster">
+              <Link
+                className={`${styles.link} text-navigation-sm`}
+                to="/services"
+              >
                 Tjänster
               </Link>
             </li>
             <li>
-              <Link className={`${styles.link} text-navigation-sm`} to="/kontakt">
+              <Link
+                className={`${styles.link} text-navigation-sm`}
+                to="/contact"
+              >
                 Kontakt
               </Link>
             </li>
