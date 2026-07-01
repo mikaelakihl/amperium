@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
 import { Hamburger } from '../Hamburger/Hamburger';
 import styles from './Navbar.module.css';
 
@@ -15,24 +16,24 @@ export function Navbar() {
         <div className={styles.menu} role="dialog" aria-modal="true">
           <ul className={styles.menuList}>
             <li>
-              <a className={`${styles.link} text-navigation-sm`} href="/">
+              <Link className={`${styles.link} text-navigation-sm`} to="/">
                 Hem
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={`${styles.link} text-navigation-sm`} href="/om-oss">
+              <Link className={`${styles.link} text-navigation-sm`} to="/om-oss">
                 Om oss
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={`${styles.link} text-navigation-sm`} href="/tjanster">
+              <Link className={`${styles.link} text-navigation-sm`} to="/tjanster">
                 Tjänster
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={`${styles.link} text-navigation-sm`} href="/kontakt">
+              <Link className={`${styles.link} text-navigation-sm`} to="/kontakt">
                 Kontakt
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
