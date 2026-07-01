@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "languageSwitcher": "Change language"
   },
   "home": {
     "title": "Home"

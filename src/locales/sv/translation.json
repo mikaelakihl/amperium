@@ -3,7 +3,8 @@
     "home": "Hem",
     "about": "Om oss",
     "services": "Tjänster",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "languageSwitcher": "Byt språk"
   },
   "home": {
     "title": "Hem"
