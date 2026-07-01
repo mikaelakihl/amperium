@@ -3,7 +3,7 @@ import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { Outlet } from 'react-router';
 import styles from './Layout.module.css';
 import { NavbarDesktop } from '../NavbarDesktop/NavbarDesktop';
-import { Button } from '../Button/Button';
+import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { PhoneOutgoing } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -19,9 +19,12 @@ export function Layout() {
           </div>
           <LanguageSwitcher />
           <div className={styles.actionButton}>
-            <Button iconLeft={<PhoneOutgoing size={16} />}>
+            <ButtonLink
+              href="tel:+46 8 854 524"
+              iconLeft={<PhoneOutgoing size={16} />}
+            >
               {t('nav.callUs')}
-            </Button>
+            </ButtonLink>
           </div>
           <div className={styles.mobileNav}>
             <Navbar />
