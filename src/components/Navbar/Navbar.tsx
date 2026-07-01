@@ -16,12 +16,20 @@ export function Navbar() {
         <div className={styles.menu} role="dialog" aria-modal="true">
           <ul className={styles.menuList}>
             <li>
-              <Link className={`${styles.link} text-navigation-sm`} to="/">
+              <Link
+                className={`${styles.link} text-navigation-sm`}
+                to="/"
+                onClick={() => setMenuOpen(false)}
+              >
                 Hem
               </Link>
             </li>
             <li>
-              <Link className={`${styles.link} text-navigation-sm`} to="/about">
+              <Link
+                className={`${styles.link} text-navigation-sm`}
+                to="/about"
+                onClick={() => setMenuOpen(false)}
+              >
                 Om oss
               </Link>
             </li>
@@ -29,6 +37,7 @@ export function Navbar() {
               <Link
                 className={`${styles.link} text-navigation-sm`}
                 to="/services"
+                onClick={() => setMenuOpen(false)}
               >
                 Tjänster
               </Link>
@@ -37,6 +46,7 @@ export function Navbar() {
               <Link
                 className={`${styles.link} text-navigation-sm`}
                 to="/contact"
+                onClick={() => setMenuOpen(false)}
               >
                 Kontakt
               </Link>
