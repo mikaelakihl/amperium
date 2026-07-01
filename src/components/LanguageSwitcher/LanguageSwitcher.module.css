@@ -5,3 +5,9 @@
   background-color: transparent;
   border: none;
 }
+
+@media (--md) {
+  .switcher {
+    color: var(--color-text-secondary);
+  }
+}

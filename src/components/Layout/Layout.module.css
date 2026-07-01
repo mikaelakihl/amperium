@@ -13,5 +13,37 @@
 
 .navContainer {
   display: flex;
+  align-items: center;
   gap: var(--space-sm);
+}
+
+.mobileNav {
+  display: flex;
+}
+
+.desktopNav {
+  display: none;
+}
+
+.actionButton {
+  display: none;
+}
+
+@media (--md) {
+  .mobileNav {
+    display: none;
+  }
+
+  .desktopNav {
+    display: flex;
+  }
+
+  .actionButton {
+    display: block;
+    font: inherit;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
 }
