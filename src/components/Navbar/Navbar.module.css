@@ -25,4 +25,5 @@
 .active {
   color: var(--color-text-primary);
   border-bottom: 2px solid var(--color-text-primary);
+  border-radius: 0 0 4px 4px;
 }
