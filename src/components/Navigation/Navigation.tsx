@@ -16,7 +16,11 @@ export function Navigation() {
       </div>
       <LanguageSwitcher />
       <div className={styles.actionButton}>
-        <ButtonLink href="tel:+46 8 854 524" iconLeft={<PhoneOutgoing size={16} />}>
+        <ButtonLink
+          size="xs"
+          href="tel:+46 8 854 524"
+          iconLeft={<PhoneOutgoing size={16} />}
+        >
           {t('nav.callUs')}
         </ButtonLink>
       </div>
