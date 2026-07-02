@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router';
-import styles from './NavbarDesktop.module.css';
+import styles from './NavDesktop.module.css';
 import { useTranslation } from 'react-i18next';
 
-export function NavbarDesktop() {
+export function NavDesktop() {
   const { t } = useTranslation();
   return (
     <nav className={styles.navbar}>
