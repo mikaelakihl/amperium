@@ -2,6 +2,7 @@
  * Spacing scale — margin, padding, gap, etc.
  */
 :root {
+  --space-2xs: 2px;
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
