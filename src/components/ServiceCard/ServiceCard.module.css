@@ -1,6 +1,7 @@
 .serviceCard {
   background-color: var(--color-background-elevated);
   color: var(--color-text-muted);
+  text-decoration: none;
   padding: var(--space-lg);
   display: flex;
   flex-direction: column;
