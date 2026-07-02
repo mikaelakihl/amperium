@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import styles from './Button.module.css'
 
 export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'ghost' | 'link'
-export type ButtonSize = 'sm' | 'md' | 'lg'
+export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg'
 
 interface GetButtonClassNamesOptions {
   size: ButtonSize

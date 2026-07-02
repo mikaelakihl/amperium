@@ -13,6 +13,12 @@
   cursor: not-allowed;
 }
 
+.xs {
+  min-height: 36px;
+  min-width: 64px;
+  padding: 0px var(--space-sm);
+}
+
 .sm {
   min-height: 44px;
   min-width: 80px;
