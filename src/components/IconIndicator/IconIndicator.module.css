@@ -1,0 +1,13 @@
+.iconIndicator {
+  background-color: color-mix(in srgb, var(--color-orange-500) 18%, transparent);
+  padding: var(--space-sm);
+  color: var(--color-text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+}
+
+.transparent {
+  background-color: transparent;
+}
