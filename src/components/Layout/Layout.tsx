@@ -1,18 +1,21 @@
 import { Navbar } from '../Navbar/Navbar';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
-import { Outlet } from 'react-router';
+import { Link, Outlet } from 'react-router';
 import styles from './Layout.module.css';
 import { NavbarDesktop } from '../NavbarDesktop/NavbarDesktop';
 import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { PhoneOutgoing } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import logo from '../../assets/WhiteAmperium24x1024.png';
 
 export function Layout() {
   const { t } = useTranslation();
   return (
     <div>
       <header className={styles.header}>
-        <div className={styles.logo}>Logo</div>
+        <Link to="/" className={styles.logo}>
+          <img src={logo} alt="Amperium" className={styles.logoImage} />
+        </Link>
         <div className={styles.navContainer}>
           <div className={styles.desktopNav}>
             <NavbarDesktop />
