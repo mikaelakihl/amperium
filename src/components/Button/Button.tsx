@@ -1,6 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
-import { getButtonClassNames, ButtonIcon } from './Button.helpers';
+import { getButtonClassNames } from './Button.helpers';
 import type { ButtonVariant, ButtonSize } from './Button.helpers';
+import { ButtonIcon } from './ButtonIcon';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;

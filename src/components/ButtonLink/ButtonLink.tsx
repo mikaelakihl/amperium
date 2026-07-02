@@ -1,6 +1,7 @@
 import type { AnchorHTMLAttributes, ReactNode } from 'react';
-import { getButtonClassNames, ButtonIcon } from '../Button/Button.helpers';
+import { getButtonClassNames } from '../Button/Button.helpers';
 import type { ButtonVariant, ButtonSize } from '../Button/Button.helpers';
+import { ButtonIcon } from '../Button/ButtonIcon';
 
 interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: ButtonVariant;
