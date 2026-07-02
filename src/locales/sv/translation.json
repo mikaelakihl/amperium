@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Hem",
+    "about": "Om oss",
+    "services": "Tjänster",
+    "contact": "Kontakt",
+    "languageSwitcher": "Byt språk",
+    "callUs": "Ring oss",
+    "skipToContent": "Hoppa till innehåll"
+  },
+  "home": {
+    "title": "Hem"
+  },
+  "about": {
+    "title": "Om oss"
+  },
+  "services": {
+    "title": "Tjänster"
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "loading": "Laddar..."
+}

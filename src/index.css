@@ -1,5 +1,15 @@
-:root {
-  h1 {
-    color: red;
-  }
+body {
+  font-family: var(--font-family-body);
+}
+
+h1 {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

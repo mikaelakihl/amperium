@@ -1,0 +1,31 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.mobileNav {
+  display: flex;
+}
+
+.desktopNav {
+  display: none;
+}
+
+.actionButton {
+  display: none;
+}
+
+@media (--md) {
+  .mobileNav {
+    display: none;
+  }
+
+  .desktopNav {
+    display: flex;
+  }
+
+  .actionButton {
+    display: block;
+  }
+}
