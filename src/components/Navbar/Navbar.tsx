@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Hamburger } from '../Hamburger/Hamburger';
 import styles from './Navbar.module.css';
@@ -18,40 +18,48 @@ export function Navbar() {
         <div className={styles.menu} role="dialog" aria-modal="true">
           <ul className={styles.menuList}>
             <li>
-              <Link
-                className={`${styles.link} text-navigation-sm`}
+              <NavLink
+                className={({ isActive }) =>
+                  `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
+                }
                 to="/"
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.home')}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className={`${styles.link} text-navigation-sm`}
+              <NavLink
+                className={({ isActive }) =>
+                  `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
+                }
                 to="/about"
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.about')}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className={`${styles.link} text-navigation-sm`}
+              <NavLink
+                className={({ isActive }) =>
+                  `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
+                }
                 to="/services"
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.services')}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className={`${styles.link} text-navigation-sm`}
+              <NavLink
+                className={({ isActive }) =>
+                  `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
+                }
                 to="/contact"
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.contact')}
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

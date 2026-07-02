@@ -21,3 +21,8 @@
 .link {
   color: var(--color-text-secondary);
 }
+
+.active {
+  color: var(--color-text-primary);
+  border-bottom: 2px solid var(--color-text-primary);
+}
