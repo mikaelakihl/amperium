@@ -41,6 +41,14 @@
   letter-spacing: var(--letter-spacing-normal);
 }
 
+.text-title-sm {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
 .text-heading-sm {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-xl);
