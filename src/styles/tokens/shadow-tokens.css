@@ -9,6 +9,6 @@
   --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.12);
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.16);
 
-  --shadow-dark-md: inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-dark-md:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 8px 24px rgba(0, 0, 0, 0.4);
 }
