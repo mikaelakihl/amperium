@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import styles from './NavbarDesktop.module.css';
 import { useTranslation } from 'react-i18next';
 
@@ -7,18 +7,38 @@ export function NavbarDesktop() {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.menuList}>
-        <Link className={`${styles.link} text-navigation-md`} to="/">
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
+          }
+          to="/"
+        >
           {t('nav.home')}
-        </Link>
-        <Link className={`${styles.link} text-navigation-md`} to="/about">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
+          }
+          to="/about"
+        >
           {t('nav.about')}
-        </Link>
-        <Link className={`${styles.link} text-navigation-md`} to="/services">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
+          }
+          to="/services"
+        >
           {t('nav.services')}
-        </Link>
-        <Link className={`${styles.link} text-navigation-md`} to="/contact">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
+          }
+          to="/contact"
+        >
           {t('nav.contact')}
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );
