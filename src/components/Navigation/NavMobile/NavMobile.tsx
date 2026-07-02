@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { Hamburger } from '../Hamburger/Hamburger';
-import styles from './Navbar.module.css';
+import { Hamburger } from '../../Hamburger/Hamburger';
+import styles from './NavMobile.module.css';
 
-export function Navbar() {
+export function NavMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
 
