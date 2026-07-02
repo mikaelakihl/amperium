@@ -1,5 +1,9 @@
 .iconIndicator {
-  background-color: color-mix(in srgb, var(--color-orange-500) 18%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--color-orange-500) 18%,
+    transparent
+  );
   padding: var(--space-sm);
   color: var(--color-text-secondary);
   display: inline-flex;
