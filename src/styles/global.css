@@ -14,3 +14,9 @@
 
 @import './semantic-tokens.css';
 @import './tokens/text-styles.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
