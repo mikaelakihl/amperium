@@ -1,14 +1,15 @@
-import styles from './Button.module.css'
+import styles from './Button.module.css';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'ghost' | 'link'
-export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg'
+export type ButtonVariant =
+  'primary' | 'secondary' | 'tertiary' | 'ghost' | 'link';
+export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg';
 
 interface GetButtonClassNamesOptions {
-  size: ButtonSize
-  variant: ButtonVariant
-  fullWidth?: boolean
-  iconOnly?: boolean
-  className?: string
+  size: ButtonSize;
+  variant: ButtonVariant;
+  fullWidth?: boolean;
+  iconOnly?: boolean;
+  className?: string;
 }
 
 export function getButtonClassNames({
@@ -27,5 +28,5 @@ export function getButtonClassNames({
     className,
   ]
     .filter(Boolean)
-    .join(' ')
+    .join(' ');
 }

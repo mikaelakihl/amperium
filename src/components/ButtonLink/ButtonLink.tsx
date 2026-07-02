@@ -27,7 +27,13 @@ export function ButtonLink({
   return (
     <a
       {...props}
-      className={getButtonClassNames({ size, variant, fullWidth, iconOnly, className })}
+      className={getButtonClassNames({
+        size,
+        variant,
+        fullWidth,
+        iconOnly,
+        className,
+      })}
     >
       {iconLeft && <ButtonIcon position="left">{iconLeft}</ButtonIcon>}
       {children}

@@ -33,13 +33,23 @@ export function Button({
       {...props}
       type={type}
       disabled={loading || disabled}
-      className={getButtonClassNames({ size, variant, fullWidth, iconOnly, className })}
+      className={getButtonClassNames({
+        size,
+        variant,
+        fullWidth,
+        iconOnly,
+        className,
+      })}
     >
-      {!loading && iconLeft && <ButtonIcon position="left">{iconLeft}</ButtonIcon>}
+      {!loading && iconLeft && (
+        <ButtonIcon position="left">{iconLeft}</ButtonIcon>
+      )}
 
       {loading ? 'Loading...' : children}
 
-      {!loading && iconRight && <ButtonIcon position="right">{iconRight}</ButtonIcon>}
+      {!loading && iconRight && (
+        <ButtonIcon position="right">{iconRight}</ButtonIcon>
+      )}
     </button>
   );
 }
