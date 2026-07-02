@@ -16,3 +16,19 @@
   height: 44px;
   width: auto;
 }
+
+/*Skip link to main content - a11y*/
+
+.skipLink {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--color-background-page);
+  color: var(--color-text-primary);
+  padding: var(--space-sm);
+  z-index: 100;
+}
+
+.skipLink:focus {
+  top: 0;
+}

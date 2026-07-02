@@ -5,7 +5,8 @@
     "services": "Services",
     "contact": "Contact",
     "languageSwitcher": "Change language",
-    "callUs": "Call us"
+    "callUs": "Call us",
+    "skipToContent": "Skip to content"
   },
   "home": {
     "title": "Home"

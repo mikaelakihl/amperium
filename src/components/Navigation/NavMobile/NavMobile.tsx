@@ -15,7 +15,7 @@ export function NavMobile() {
       </div>
 
       {menuOpen && (
-        <div className={styles.menu} role="dialog" aria-modal="true">
+        <div className={styles.menu}>
           <ul className={styles.menuList}>
             <li>
               <NavLink
