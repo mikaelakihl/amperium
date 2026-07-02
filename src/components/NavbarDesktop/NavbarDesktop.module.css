@@ -1,6 +1,8 @@
 .menuList {
   display: flex;
   gap: var(--space-sm);
+  padding: 0;
+  margin: 0;
 }
 
 .link {
