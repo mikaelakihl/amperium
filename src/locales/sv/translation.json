@@ -37,5 +37,14 @@
     "contact": "$t(common.contact)",
     "theCompany": "Företaget",
     "allRightsReserved": "Alla rättigheter förbehållna"
+  },
+
+  "hero": {
+    "credit": "Kreditvärdighet",
+    "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
+    "electricalInstallation&service": "Elinstallation & service",
+    "service": "Service",
+    "contactUs": "Kontakta oss",
+    "ourServices": "Våra tjänster"
   }
 }
