@@ -24,14 +24,40 @@ ul {
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-2xl);
-  text-align: center;
+  gap: var(--space-lg);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.889)),
     url('../../assets/voltage.png');
   background-size: cover;
   background-position: center 70%;
+  padding-block: var(--space-2xl);
+}
+
+.topRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xl);
+  text-align: center;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding-top: var(--space-md);
+}
+
+.bottomItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-action-secondary);
+}
+
+.bottomItem p {
+  margin: 0;
 }
 
 .logoImage {
@@ -68,11 +94,18 @@ ul {
 
 @media (--md) {
   .footer {
+    padding-inline: var(--space-2xl);
+  }
+
+  .topRow {
     flex-direction: row;
     justify-content: space-between;
-    padding-block: var(--space-2xl);
-    padding-inline: var(--space-2xl);
     text-align: left;
+  }
+
+  .bottomRow {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .logoImage {
