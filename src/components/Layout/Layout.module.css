@@ -1,3 +1,13 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
 .header {
   background-color: var(--color-background-page);
   width: 100%;
@@ -5,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: var(--space-lg);
 }
 
 .logo {
@@ -31,4 +42,10 @@
 
 .skipLink:focus {
   top: 0;
+}
+
+@media (--md) {
+  .header {
+    padding-inline: var(--space-2xl);
+  }
 }

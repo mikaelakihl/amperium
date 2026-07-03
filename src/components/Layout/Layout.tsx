@@ -8,7 +8,7 @@ import { Footer } from '../Footer/Footer';
 export function Layout() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className={styles.page}>
       <a href="#main-content" className={styles.skipLink}>
         {t('nav.skipToContent')}
       </a>
@@ -18,7 +18,7 @@ export function Layout() {
         </Link>
         <Navigation />
       </header>
-      <main id="main-content">
+      <main id="main-content" className={styles.main}>
         <Outlet />
       </main>
       <Footer />
