@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Mail, Phone } from 'lucide-react';
 import placeholder from '../../assets/contacts/placeholder.jpg';
 import styles from './ContactCard.module.css';
+import { useTranslation } from 'react-i18next';
 
 interface ContactCardProps {
   name: string;
@@ -11,6 +12,7 @@ interface ContactCardProps {
 }
 
 export function ContactCard({ name, image, phone, email }: ContactCardProps) {
+  const { t } = useTranslation();
   const [imageFailed, setImageFailed] = useState(false);
 
   return (
@@ -19,7 +21,7 @@ export function ContactCard({ name, image, phone, email }: ContactCardProps) {
       <div className={styles.imgContainer}>
         <img
           src={!image || imageFailed ? placeholder : image}
-          alt={name}
+          alt={!image || imageFailed ? t('contact.imageUnavailable') : name}
           className={styles.contactImage}
           onError={() => setImageFailed(true)}
         />
@@ -27,11 +29,11 @@ export function ContactCard({ name, image, phone, email }: ContactCardProps) {
 
       <div className={styles.contactInfo}>
         <div className={`text-body-sm ${styles.contactInfoItem}`}>
-          <Phone size={16} />
+          <Phone aria-hidden="true" size={16} />
           <a href={`tel:${phone}`}>{phone}</a>
         </div>
         <div className={`text-body-sm ${styles.contactInfoItem}`}>
-          <Mail size={16} />
+          <Mail aria-hidden="true" size={16} />
           <a href={`mailto:${email}`}>{email}</a>
         </div>
       </div>
