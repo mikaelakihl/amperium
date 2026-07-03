@@ -1,4 +1,10 @@
+import styles from './Footer.module.css';
+import logo from '../../assets/WhiteAmperium24x1024.png';
+import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
+
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <footer>
       <Link to="/" className={styles.logo}>

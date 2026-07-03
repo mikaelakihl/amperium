@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router';
 import styles from './Layout.module.css';
 import logo from '../../assets/WhiteAmperium24x1024.png';
 import { useTranslation } from 'react-i18next';
+import { Footer } from '../Footer/Footer';
 
 export function Layout() {
   const { t } = useTranslation();
@@ -20,9 +21,7 @@ export function Layout() {
       <main id="main-content">
         <Outlet />
       </main>
-      <footer>
-        <p>Temporary footer</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
