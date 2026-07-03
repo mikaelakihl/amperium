@@ -37,5 +37,14 @@
     "contact": "$t(common.contact)",
     "theCompany": "The company",
     "allRightsReserved": "All rights reserved"
+  },
+
+  "hero": {
+    "credit": "Credit rating",
+    "slogan": "We make <br/> electricity <highlight>work</highlight>",
+    "electricalInstallation&service": "Electricalinstallation & Service",
+    "services": "Service",
+    "contactUs": "Contact us",
+    "ourServices": "Our services"
   }
 }
