@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 export function Footer() {
   const { t } = useTranslation();
   return (
-    <footer>
+    <footer className={styles.footer}>
       <Link to="/" className={styles.logo}>
         <img src={logo} alt="Amperium" className={styles.logoImage} />
       </Link>
