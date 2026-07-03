@@ -4,8 +4,10 @@ import { getButtonClassNames } from '../Button/Button.helpers';
 import type { ButtonVariant, ButtonSize } from '../Button/Button.helpers';
 import { ButtonIcon } from '../Button/ButtonIcon';
 
-interface ButtonLinkBaseProps
-  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> {
+interface ButtonLinkBaseProps extends Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  'href'
+> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   fullWidth?: boolean;
@@ -16,8 +18,8 @@ interface ButtonLinkBaseProps
 }
 
 type ButtonLinkProps = ButtonLinkBaseProps &
+  /** Internal route, e.g. "/contact" — renders as a react-router Link (no full page reload). */
   (
-    /** Internal route, e.g. "/contact" — renders as a react-router Link (no full page reload). */
     | { to: string; href?: never }
     /** External/tel/mailto link — renders as a plain <a>. */
     | { to?: never; href: string }

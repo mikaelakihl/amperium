@@ -34,15 +34,13 @@ describe('Hero', () => {
       name: /våra tjänster|our services/i,
     });
     expect(links.length).toBeGreaterThan(0);
-    links.forEach((link) =>
-      expect(link).toHaveAttribute('href', '/services')
-    );
+    links.forEach((link) => expect(link).toHaveAttribute('href', '/services'));
   });
 
   it('renders a credit rating badge for each badge slot', () => {
     renderHero();
-    expect(
-      screen.getAllByText(/kreditvärdighet|credit rating/i)
-    ).toHaveLength(2);
+    expect(screen.getAllByText(/kreditvärdighet|credit rating/i)).toHaveLength(
+      2
+    );
   });
 });
