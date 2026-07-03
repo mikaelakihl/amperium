@@ -1,3 +1,26 @@
+h2 {
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+a {
+  color: var(--color-action-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-action-primary);
+}
+
+address {
+  color: var(--color-action-secondary);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .logoImage {
   height: 56px;
   width: auto;
@@ -6,4 +29,15 @@
 .logo {
   display: flex;
   align-items: center;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
