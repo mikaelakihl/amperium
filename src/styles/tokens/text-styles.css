@@ -23,6 +23,7 @@
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
   letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
 }
 
 .text-navigation-sm {
