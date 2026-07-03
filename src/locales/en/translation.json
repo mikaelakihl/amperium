@@ -1,9 +1,16 @@
 {
+  "common": {
+    "services": "Services",
+    "electricalInstallation": "Electrical installation",
+    "projectManagement": "Project management",
+    "about": "About",
+    "contact": "Contact"
+  },
   "nav": {
     "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "contact": "Contact",
+    "about": "$t(common.about)",
+    "services": "$t(common.services)",
+    "contact": "$t(common.contact)",
     "languageSwitcher": "Change language",
     "callUs": "Call us",
     "skipToContent": "Skip to content"
@@ -12,14 +19,23 @@
     "title": "Home"
   },
   "about": {
-    "title": "About"
+    "title": "$t(common.about)"
   },
   "services": {
-    "title": "Services"
+    "title": "$t(common.services)"
   },
   "contact": {
-    "title": "Contact",
+    "title": "$t(common.contact)",
     "imageUnavailable": "No image available"
   },
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "footer": {
+    "services": "$t(common.services)",
+    "electricalInstallation": "$t(common.electricalInstallation)",
+    "projectManagement": "$t(common.projectManagement)",
+    "about": "$t(common.about)",
+    "contact": "$t(common.contact)",
+    "theCompany": "The company",
+    "allRightsReserved": "All rights reserved"
+  }
 }

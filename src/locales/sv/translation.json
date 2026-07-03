@@ -1,9 +1,16 @@
 {
+  "common": {
+    "services": "Tjänster",
+    "electricalInstallation": "Elinstallation",
+    "projectManagement": "Projektledning",
+    "about": "Om oss",
+    "contact": "Kontakt"
+  },
   "nav": {
     "home": "Hem",
-    "about": "Om oss",
-    "services": "Tjänster",
-    "contact": "Kontakt",
+    "about": "$t(common.about)",
+    "services": "$t(common.services)",
+    "contact": "$t(common.contact)",
     "languageSwitcher": "Byt språk",
     "callUs": "Ring oss",
     "skipToContent": "Hoppa till innehåll"
@@ -12,14 +19,23 @@
     "title": "Hem"
   },
   "about": {
-    "title": "Om oss"
+    "title": "$t(common.about)"
   },
   "services": {
-    "title": "Tjänster"
+    "title": "$t(common.services)"
   },
   "contact": {
-    "title": "Kontakt",
+    "title": "$t(common.contact)",
     "imageUnavailable": "Ingen bild kunde visas"
   },
-  "loading": "Laddar..."
+  "loading": "Laddar...",
+  "footer": {
+    "services": "$t(common.services)",
+    "electricalInstallation": "$t(common.electricalInstallation)",
+    "projectManagement": "$t(common.projectManagement)",
+    "about": "$t(common.about)",
+    "contact": "$t(common.contact)",
+    "theCompany": "Företaget",
+    "allRightsReserved": "Alla rättigheter förbehållna"
+  }
 }

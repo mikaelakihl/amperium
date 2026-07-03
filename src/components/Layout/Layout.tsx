@@ -3,11 +3,12 @@ import { Link, Outlet } from 'react-router';
 import styles from './Layout.module.css';
 import logo from '../../assets/WhiteAmperium24x1024.png';
 import { useTranslation } from 'react-i18next';
+import { Footer } from '../Footer/Footer';
 
 export function Layout() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className={styles.page}>
       <a href="#main-content" className={styles.skipLink}>
         {t('nav.skipToContent')}
       </a>
@@ -17,12 +18,10 @@ export function Layout() {
         </Link>
         <Navigation />
       </header>
-      <main id="main-content">
+      <main id="main-content" className={styles.main}>
         <Outlet />
       </main>
-      <footer>
-        <p>Temporary footer</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
