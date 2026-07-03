@@ -4,7 +4,7 @@ import styles from './Badge.module.css';
 export function Badge() {
   const { t } = useTranslation();
   return (
-    <div className={styles.badge}>
+    <div className={`text-body-sm ${styles.badge}`}>
       <div className={styles.temp}>
         <p>Temporary</p>
       </div>
