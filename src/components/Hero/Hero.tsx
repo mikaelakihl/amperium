@@ -12,7 +12,7 @@ export function Hero() {
           <p className={`${styles.label} text-label-sm`}>
             {t('hero.electricalInstallation&service')}
           </p>
-          <p className={`text-heading-md ${styles.slogan}`}>
+          <h1 className={`text-heading-md ${styles.slogan}`}>
             <Trans
               i18nKey="hero.slogan"
               components={{
@@ -20,7 +20,7 @@ export function Hero() {
                 br: <br />,
               }}
             />
-          </p>
+          </h1>
           <div className={styles.buttonsDesktop}>
             <Button size="xs" fullWidth>
               {t('hero.contactUs')}
