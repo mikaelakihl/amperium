@@ -1,0 +1,12 @@
+/**
+ * Viewport breakpoints — mobile-first min-width gates.
+ * Custom properties can't be used inside @media conditions (resolved at parse
+ * time, before the cascade), so these are defined as @custom-media instead
+ * and resolved at build time via postcss-custom-media. Use as @media (--md) { ... }.
+ */
+@custom-media --xs (min-width: 480px);
+@custom-media --sm (min-width: 640px);
+@custom-media --md (min-width: 768px);
+@custom-media --lg (min-width: 1024px);
+@custom-media --xl (min-width: 1280px);
+@custom-media --2xl (min-width: 1536px);
