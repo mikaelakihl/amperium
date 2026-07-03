@@ -2,6 +2,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Badge } from '../Badge/Badge';
 import styles from './Hero.module.css';
 import { Button } from '../Button/Button';
+import { ButtonLink } from '../ButtonLink/ButtonLink';
 
 export function Hero() {
   const { t } = useTranslation();
@@ -22,12 +23,12 @@ export function Hero() {
             />
           </h1>
           <div className={styles.buttonsDesktop}>
-            <Button size="xs" fullWidth>
+            <ButtonLink to="/contact" size="xs" fullWidth>
               {t('hero.contactUs')}
-            </Button>
-            <Button size="xs" variant="secondary" fullWidth>
+            </ButtonLink>
+            <ButtonLink to="/services" size="xs" variant="secondary" fullWidth>
               {t('hero.ourServices')}
-            </Button>
+            </ButtonLink>
           </div>
         </div>
 
@@ -38,10 +39,12 @@ export function Hero() {
       </div>
 
       <div className={styles.buttons}>
-        <Button fullWidth>{t('hero.contactUs')}</Button>
-        <Button variant="secondary" fullWidth>
+        <ButtonLink to="/contact" size="xs" fullWidth>
+          {t('hero.contactUs')}
+        </ButtonLink>
+        <ButtonLink to="/services" size="xs" variant="secondary" fullWidth>
           {t('hero.ourServices')}
-        </Button>
+        </ButtonLink>
       </div>
     </section>
   );
