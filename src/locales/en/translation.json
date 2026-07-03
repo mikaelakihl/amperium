@@ -18,7 +18,8 @@
     "title": "Services"
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "imageUnavailable": "No image available"
   },
   "loading": "Loading..."
 }

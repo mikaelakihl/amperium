@@ -18,7 +18,8 @@
     "title": "Tjänster"
   },
   "contact": {
-    "title": "Kontakt"
+    "title": "Kontakt",
+    "imageUnavailable": "Ingen bild kunde visas"
   },
   "loading": "Laddar..."
 }
