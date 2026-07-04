@@ -12,6 +12,7 @@
 @media (--md) {
   .cardContainer {
     flex-direction: row;
+    justify-content: center;
   }
 
   .cards {
