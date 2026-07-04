@@ -16,7 +16,9 @@ export function Footer() {
         </Link>
         <div className={styles.linkContainer}>
           <nav className={styles.section} aria-label={t('footer.services')}>
-            <h2 className="text-label-sm">{t('footer.services')}</h2>
+            <h2 className={`text-label-sm ${styles.heading}`}>
+              {t('footer.services')}
+            </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
                 <Link to="/tjanster/c">Service</Link>
@@ -32,7 +34,9 @@ export function Footer() {
             </ul>
           </nav>
           <nav className={styles.section} aria-label={t('footer.theCompany')}>
-            <h2 className="text-label-sm">{t('footer.theCompany')}</h2>
+            <h2 className={`text-label-sm ${styles.heading}`}>
+              {t('footer.theCompany')}
+            </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
                 <Link to="/about">{t('footer.about')}</Link>
@@ -43,7 +47,9 @@ export function Footer() {
             </ul>
           </nav>
           <div className={styles.section} aria-label={t('footer.contact')}>
-            <h2 className="text-label-sm">{t('footer.contact')}</h2>
+            <h2 className={`text-label-sm ${styles.heading}`}>
+              {t('footer.contact')}
+            </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
                 <a href="tel:+46854524">08-854 524</a>
