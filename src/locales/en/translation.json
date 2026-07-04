@@ -32,7 +32,13 @@
     "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
     "serviceCardElectricalDescription": "New installation, renovation, and upgrading of electrical systems",
     "serviceCardProjectTitle": "$t(common.projectManagement)",
-    "serviceCardProjectDescription": "Consultation and planning from idea to completed project"
+    "serviceCardProjectDescription": "Consultation and planning from idea to completed project",
+    "benefitBannerCertifiedTitle": "Certified",
+    "benefitBannerCertifiedDescription": "All our electricians are certified",
+    "benefitBannerResponseTitle": "Fast response",
+    "benefitBannerResponseDescription": "We get back to you within 24h",
+    "benefitBannerCreditTitle": "Good creditworthiness",
+    "benefitBannerCreditDescription": "UC-approved since 2024"
   },
   "about": {
     "title": "$t(common.about)"

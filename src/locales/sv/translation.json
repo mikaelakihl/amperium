@@ -32,7 +32,13 @@
     "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
     "serviceCardElectricalDescription": "Nyinstallation, ombyggnad och uppgradering av elsystem",
     "serviceCardProjectTitle": "$t(common.projectManagement)",
-    "serviceCardProjectDescription": "Konsultation och planering från idé till färdigt projekt"
+    "serviceCardProjectDescription": "Konsultation och planering från idé till färdigt projekt",
+    "benefitBannerCertifiedTitle": "Certifierade",
+    "benefitBannerCertifiedDescription": "Alla våra elektriker är certifierade",
+    "benefitBannerResponseTitle": "Snabb respons",
+    "benefitBannerResponseDescription": "Vi återkommer inom 24h",
+    "benefitBannerCreditTitle": "God kreditvärdighet",
+    "benefitBannerCreditDescription": "UC-godkända sedan 2024"
   },
   "about": {
     "title": "$t(common.about)"
