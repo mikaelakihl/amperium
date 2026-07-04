@@ -5,7 +5,8 @@
     "projectManagement": "Projektledning",
     "about": "Om oss",
     "contact": "Kontakt",
-    "service": "Service"
+    "service": "Service",
+    "ourServices": "Våra tjänster"
   },
   "nav": {
     "home": "Hem",
@@ -23,7 +24,15 @@
     "aboutPreviewDescription": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på",
     "statisticYears": "År i branschen",
     "statisticProjects": "Genomförda projekt",
-    "statisticCertified": "Certifierade elektriker"
+    "statisticCertified": "Certifierade elektriker",
+    "servicesPreviewLabel": "Vad vi gör",
+    "servicesPreviewHeading": "$t(common.ourServices)",
+    "serviceCardServiceTitle": "$t(common.service)",
+    "serviceCardServiceDescription": "Snabb och pålitlig hjälp när något strular - dygnet runt",
+    "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
+    "serviceCardElectricalDescription": "Nyinstallation, ombyggnad och uppgradering av elsystem",
+    "serviceCardProjectTitle": "$t(common.projectManagement)",
+    "serviceCardProjectDescription": "Konsultation och planering från idé till färdigt projekt"
   },
   "about": {
     "title": "$t(common.about)"
@@ -51,7 +60,7 @@
     "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
     "electricalInstallation&service": "Elinstallation & service",
     "contactUs": "Kontakta oss",
-    "ourServices": "Våra tjänster"
+    "ourServices": "$t(common.ourServices)"
   },
 
   "banner": {
