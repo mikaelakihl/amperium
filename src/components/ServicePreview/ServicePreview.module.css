@@ -1,0 +1,21 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.cards {
+  padding-top: var(--space-lg);
+}
+
+@media (--md) {
+  .cardContainer {
+    flex-direction: row;
+  }
+
+  .cards {
+    padding-inline: var(--space-4xl);
+    padding-top: var(--space-lg);
+  }
+}
