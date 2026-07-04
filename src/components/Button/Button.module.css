@@ -49,7 +49,7 @@
 
 .primary {
   background-color: var(--color-action-primary);
-  color: var(--color-green-100);
+  color: var(--color-text-inverse);
 }
 .secondary {
   background-color: var(--color-neutral-1000);
