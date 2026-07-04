@@ -20,7 +20,10 @@
     "title": "Hem",
     "aboutPreviewLabel": "$t(common.about)",
     "aboutPreviewHeading": "Det varma företaget där kvalité är ledordet",
-    "aboutPreviewDescription": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på"
+    "aboutPreviewDescription": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på",
+    "statisticYears": "År i branschen",
+    "statisticProjects": "Genomförda projekt",
+    "statisticCertified": "Certifierade elektriker"
   },
   "about": {
     "title": "$t(common.about)"

@@ -20,7 +20,10 @@
     "title": "Home",
     "aboutPreviewLabel": "$t(common.about)",
     "aboutPreviewHeading": "The company that puts quality first",
-    "aboutPreviewDescription": "We offer services in maintenance, electrical installation, and project management consulting. Built on responsiveness and strong leadership, we deliver results you can rely on."
+    "aboutPreviewDescription": "We offer services in maintenance, electrical installation, and project management consulting. Built on responsiveness and strong leadership, we deliver results you can rely on.",
+    "statisticYears": "Years in business",
+    "statisticProjects": "Completed projects",
+    "statisticCertified": "Certified electricians"
   },
   "about": {
     "title": "$t(common.about)"
