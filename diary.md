@@ -27,3 +27,12 @@
 - Created four new components IconIndicator, ServiceCard, BenefitItem, StatisticCard
 - Updated text styles tokens to use REM instead of px since it was a mistake from the beginning.
 - Added new size 'xs' to button and change it in nav
+
+## 2026-07-03
+
+- Created contactCard inkluding name, img (and fallback/placeholder img), phone and email details & a Badge component that is temporary until I get a embed code for Credits.
+- Added a responsive footer component inlcuding links, logo and copyright, instagram and a background img
+- Added Hero including slogan as h1, buttons for contact us and services, Badges, background img of ameperiums car
+- Styled Hero differentyl depending on mobile and desktop.
+- Updated ButtonLink to be able to add NavLink or href
+- Added tests for Footer, Hero and ContactCard

@@ -4,7 +4,8 @@
     "electricalInstallation": "Electrical installation",
     "projectManagement": "Project management",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "service": "Service"
   },
   "nav": {
     "home": "Home",
@@ -43,8 +44,13 @@
     "credit": "Credit rating",
     "slogan": "We make <br/> electricity <highlight>work</highlight>",
     "electricalInstallation&service": "Electricalinstallation & Service",
-    "services": "Service",
     "contactUs": "Contact us",
     "ourServices": "Our services"
+  },
+
+  "banner": {
+    "electricalInstallation": "$t(common.electricalInstallation)",
+    "projectManagement": "$t(common.projectManagement)",
+    "service": "$t(common.service)"
   }
 }

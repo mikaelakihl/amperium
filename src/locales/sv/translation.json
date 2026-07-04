@@ -4,7 +4,8 @@
     "electricalInstallation": "Elinstallation",
     "projectManagement": "Projektledning",
     "about": "Om oss",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "service": "Service"
   },
   "nav": {
     "home": "Hem",
@@ -43,8 +44,13 @@
     "credit": "Kreditvärdighet",
     "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
     "electricalInstallation&service": "Elinstallation & service",
-    "service": "Service",
     "contactUs": "Kontakta oss",
     "ourServices": "Våra tjänster"
+  },
+
+  "banner": {
+    "electricalInstallation": "$t(common.electricalInstallation)",
+    "projectManagement": "$t(common.projectManagement)",
+    "service": "$t(common.service)"
   }
 }
