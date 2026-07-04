@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
 
   padding-inline: var(--space-lg);
+  padding-block: var(--space-md);
   flex-direction: column;
   display: flex;
 }
@@ -61,7 +62,7 @@ h1 {
   display: none;
 }
 
-@media (--sm) {
+@media (--md) {
   .hero {
     background-position: center 60%;
     padding-inline: var(--space-xl);
