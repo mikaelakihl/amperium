@@ -13,5 +13,6 @@
 
   .benefitContainerDesktop {
     display: block;
+    margin-block: var(--space-4xl);
   }
 }
