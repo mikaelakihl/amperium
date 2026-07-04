@@ -1,7 +1,6 @@
 import { Trans, useTranslation } from 'react-i18next';
 import { Badge } from '../Badge/Badge';
 import styles from './Hero.module.css';
-import { Button } from '../Button/Button';
 import { ButtonLink } from '../ButtonLink/ButtonLink';
 
 export function Hero() {
