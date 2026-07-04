@@ -17,7 +17,10 @@
     "skipToContent": "Skip to content"
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "aboutPreviewLabel": "$t(common.about)",
+    "aboutPreviewHeading": "The company that puts quality first",
+    "aboutPreviewDescription": "We offer services in maintenance, electrical installation, and project management consulting. Built on responsiveness and strong leadership, we deliver results you can rely on."
   },
   "about": {
     "title": "$t(common.about)"
