@@ -4,14 +4,20 @@ import { ServiceCard } from '../ServiceCard/ServiceCard';
 import { ClipboardList, Wrench, Zap } from 'lucide-react';
 import styles from './ServicePreview.module.css';
 
-export function ServicePreview() {
+interface ServicePreviewProps {
+  showIntro?: boolean;
+}
+
+export function ServicePreview({ showIntro = true }: ServicePreviewProps) {
   const { t } = useTranslation();
   return (
     <section className={styles.servicePreview}>
-      <SectionIntro
-        label={t('home.servicesPreviewLabel')}
-        heading={t('home.servicesPreviewHeading')}
-      />
+      {showIntro && (
+        <SectionIntro
+          label={t('home.servicesPreviewLabel')}
+          heading={t('home.servicesPreviewHeading')}
+        />
+      )}
       <div className={styles.cards}>
         <div className={styles.cardContainer}>
           <ServiceCard
