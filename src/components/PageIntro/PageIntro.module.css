@@ -12,6 +12,11 @@
   color: var(--color-text-secondary);
 }
 
+.note {
+  color: var(--color-text-muted);
+  font-weight: 200;
+  font-style: italic;
+}
 
 @media (--md) {
   .pageIntro {
@@ -20,5 +25,9 @@
 
   .heading {
     font-size: var(--font-size-4xl);
+  }
+
+  .description {
+    max-width: 90ch;
   }
 }
