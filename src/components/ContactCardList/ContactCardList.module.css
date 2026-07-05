@@ -6,8 +6,14 @@
   gap: var(--space-lg);
 }
 
-@media (--md) {
+@media (--sm) {
   .contactList {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (--lg) {
+  .contactList {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

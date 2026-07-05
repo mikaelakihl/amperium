@@ -2,6 +2,7 @@
   background-color: var(--color-background-elevated);
   width: 100%;
   max-width: 400px;
+  min-width: 0;
   padding: var(--space-2xl);
   display: flex;
   flex-direction: column;
