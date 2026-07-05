@@ -41,7 +41,10 @@
     "benefitBannerCreditDescription": "UC-approved since 2024"
   },
   "about": {
-    "title": "$t(common.about)"
+    "title": "$t(common.about)",
+    "heading": "Meet the team",
+    "description": "<highlight>With over 40 years of combined experience in the electrical industry,</highlight> Amperium Elektriska delivers quality at every step — both as installer and project manager. From small assignments to turnkey installations for major clients, the goal is always the same:<br/> making the project a success.",
+    "note": "Amperium was founded in 2023 by Jimmy Rittervall & Simon Kihl"
   },
   "services": {
     "title": "$t(common.services)"

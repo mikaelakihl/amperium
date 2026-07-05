@@ -12,10 +12,10 @@ export function SectionIntro({
   description,
 }: SectionIntroProps) {
   return (
-    <section className={styles.section}>
+    <div className={styles.section}>
       <p className={`text-label-sm ${styles.label}`}>{label}</p>
       <h2 className={`text-heading-md ${styles.heading}`}>{heading}</h2>
       <p className={`text-body-md ${styles.description}`}>{description}</p>
-    </section>
+    </div>
   );
 }
