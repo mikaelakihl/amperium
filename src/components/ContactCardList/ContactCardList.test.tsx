@@ -10,10 +10,13 @@ describe('ContactCardList', () => {
 
   it('renders the name of every contact', () => {
     render(<ContactCardList />);
-    ['Simon Kihl', 'Jimmy Rittervall', 'William Darlöf', 'Oscar Sjögren'].forEach(
-      (name) => {
-        expect(screen.getByText(name)).toBeInTheDocument();
-      }
-    );
+    [
+      'Simon Kihl',
+      'Jimmy Rittervall',
+      'William Darlöf',
+      'Oscar Sjögren',
+    ].forEach((name) => {
+      expect(screen.getByText(name)).toBeInTheDocument();
+    });
   });
 });
