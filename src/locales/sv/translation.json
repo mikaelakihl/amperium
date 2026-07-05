@@ -47,7 +47,9 @@
     "note": "Amperium grundades 2023 av Jimmy Rittervall & Simon Kihl "
   },
   "services": {
-    "title": "$t(common.services)"
+    "title": "$t(common.services)",
+    "heading": "$t(common.ourServices)",
+    "description": "Med lång erfarenhet inom el hjälper vi både privatpersoner och företag - snabbt, säkert och med hög kvalitet i varje uppdrag.<highlight> Utforska våra tjänster nedan</highlight>"
   },
   "contact": {
     "title": "$t(common.contact)",

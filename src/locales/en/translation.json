@@ -32,7 +32,6 @@
     "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
     "serviceCardElectricalDescription": "New installation, renovation, and upgrading of electrical systems",
     "serviceCardProjectTitle": "$t(common.projectManagement)",
-    "serviceCardProjectDescription": "Consultation and planning from idea to completed project",
     "benefitBannerCertifiedTitle": "Certified",
     "benefitBannerCertifiedDescription": "All our electricians are certified",
     "benefitBannerResponseTitle": "Fast response",
@@ -43,11 +42,13 @@
   "about": {
     "title": "$t(common.about)",
     "heading": "Meet the team",
-    "description": "<highlight>With over 40 years of combined experience in the electrical industry,</highlight> Amperium Elektriska delivers quality at every step — both as installer and project manager. From small assignments to turnkey installations for major clients, the goal is always the same:<br/> making the project a success.",
+    "description": "<highlight>With over 40 years of combined experience in the electrical industry,</highlight> Amperium Elektriska delivers quality at every step — both as installer and project manager. From small assignments to turnkey installations for major clients, the goal is always the same:<br/ > making the project a success.",
     "note": "Amperium was founded in 2023 by Jimmy Rittervall & Simon Kihl"
   },
   "services": {
-    "title": "$t(common.services)"
+    "title": "$t(common.services)",
+    "heading": "$t(common.ourServices)",
+    "description": "With extensive experience in electrical work, we help both private individuals and businesses - quickly, safely, and with high quality in every job. <highlight>Explore our services below</highlight>"
   },
   "contact": {
     "title": "$t(common.contact)",
