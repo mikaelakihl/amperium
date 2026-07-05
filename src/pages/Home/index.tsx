@@ -12,13 +12,16 @@ export function Home() {
     <>
       <Hero />
       <Banner />
-      <div className="container">
-        <AboutPreview />
-        <ServicePreview />
-        <div className={styles.benefitContainerDesktop}>
-          <BenefitBanner />
+      <div className="gradient">
+        <div className="container">
+          <AboutPreview />
+          <ServicePreview />
+          <div className={styles.benefitContainerDesktop}>
+            <BenefitBanner />
+          </div>
         </div>
       </div>
+
       <div className={styles.benefitContainerMobile}>
         <BenefitBanner />
       </div>
