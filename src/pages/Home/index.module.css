@@ -1,0 +1,18 @@
+.benefitContainerMobile {
+  margin-top: var(--space-4xl);
+}
+
+.benefitContainerDesktop {
+  display: none;
+}
+
+@media (--md) {
+  .benefitContainerMobile {
+    display: none;
+  }
+
+  .benefitContainerDesktop {
+    display: block;
+    margin-block: var(--space-4xl);
+  }
+}

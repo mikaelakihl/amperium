@@ -5,7 +5,8 @@
     "projectManagement": "Projektledning",
     "about": "Om oss",
     "contact": "Kontakt",
-    "service": "Service"
+    "service": "Service",
+    "ourServices": "Våra tjänster"
   },
   "nav": {
     "home": "Hem",
@@ -17,7 +18,27 @@
     "skipToContent": "Hoppa till innehåll"
   },
   "home": {
-    "title": "Hem"
+    "title": "Hem",
+    "aboutPreviewLabel": "$t(common.about)",
+    "aboutPreviewHeading": "Det varma företaget där kvalité är ledordet",
+    "aboutPreviewDescription": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på",
+    "statisticYears": "År i branschen",
+    "statisticProjects": "Genomförda projekt",
+    "statisticCertified": "Certifierade elektriker",
+    "servicesPreviewLabel": "Vad vi gör",
+    "servicesPreviewHeading": "$t(common.ourServices)",
+    "serviceCardServiceTitle": "$t(common.service)",
+    "serviceCardServiceDescription": "Snabb och pålitlig hjälp när något strular - dygnet runt",
+    "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
+    "serviceCardElectricalDescription": "Nyinstallation, ombyggnad och uppgradering av elsystem",
+    "serviceCardProjectTitle": "$t(common.projectManagement)",
+    "serviceCardProjectDescription": "Konsultation och planering från idé till färdigt projekt",
+    "benefitBannerCertifiedTitle": "Certifierade",
+    "benefitBannerCertifiedDescription": "Alla våra elektriker är certifierade",
+    "benefitBannerResponseTitle": "Snabb respons",
+    "benefitBannerResponseDescription": "Vi återkommer inom 24h",
+    "benefitBannerCreditTitle": "God kreditvärdighet",
+    "benefitBannerCreditDescription": "UC-godkända sedan 2024"
   },
   "about": {
     "title": "$t(common.about)"
@@ -45,7 +66,7 @@
     "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
     "electricalInstallation&service": "Elinstallation & service",
     "contactUs": "Kontakta oss",
-    "ourServices": "Våra tjänster"
+    "ourServices": "$t(common.ourServices)"
   },
 
   "banner": {
