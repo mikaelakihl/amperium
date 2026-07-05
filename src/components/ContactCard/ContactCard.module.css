@@ -36,7 +36,7 @@ a:hover {
   color: var(--color-action-primary);
 }
 
-h3 {
+.contactName {
   color: var(--color-text-primary);
   margin: 0;
   padding: 0;
