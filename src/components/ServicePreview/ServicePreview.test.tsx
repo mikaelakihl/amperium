@@ -14,16 +14,14 @@ function renderServicePreview(showIntro?: boolean) {
 describe('ServicePreview', () => {
   it('renders the section intro by default', () => {
     renderServicePreview();
-    expect(
-      screen.getByRole('heading', { level: 2 })
-    ).toHaveTextContent(/våra tjänster|our services/i);
+    expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent(
+      /våra tjänster|our services/i
+    );
   });
 
   it('hides the section intro when showIntro is false', () => {
     renderServicePreview(false);
-    expect(
-      screen.queryByRole('heading', { level: 2 })
-    ).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { level: 2 })).not.toBeInTheDocument();
   });
 
   it('always renders a card for every service', () => {

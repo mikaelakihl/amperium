@@ -15,7 +15,10 @@ describe('Services', () => {
   it('renders the page heading', () => {
     renderServices();
     expect(
-      screen.getByRole('heading', { level: 2, name: /våra tjänster|our services/i })
+      screen.getByRole('heading', {
+        level: 2,
+        name: /våra tjänster|our services/i,
+      })
     ).toBeInTheDocument();
   });
 
