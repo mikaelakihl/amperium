@@ -44,3 +44,12 @@
 - Decided to add black to orange background instead of white due to a11y.
 - Changed the background-elevated color to a darker gray which made it look so much better.
 - Added all componenents needed into Home page.
+
+## 2026-07-05
+
+- created new components, PageIntro, ContactCardList.
+- Added a gradient in Home page to make it look more interesting
+- Completed about and services page by adding all needed components.
+- Added a margin-top in footer component to create a larger seperation from the content.
+- Added a new space token, --space-5xl
+- Updated ServicePreview with optional showIntro prop to be able to reuse it in services page
