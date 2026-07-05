@@ -36,3 +36,11 @@
 - Styled Hero differentyl depending on mobile and desktop.
 - Updated ButtonLink to be able to add NavLink or href
 - Added tests for Footer, Hero and ContactCard
+
+## 2026-07-04
+
+- Created new components, Banner, SectionIntro, AboutPreview, ServicePreview, BenefitBanner,
+- Adjusted and played around with responsive styling for components but a lot with padding and margin as well.
+- Decided to add black to orange background instead of white due to a11y.
+- Changed the background-elevated color to a darker gray which made it look so much better.
+- Added all componenents needed into Home page.
