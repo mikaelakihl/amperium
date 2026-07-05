@@ -41,7 +41,10 @@
     "benefitBannerCreditDescription": "UC-godkända sedan 2024"
   },
   "about": {
-    "title": "$t(common.about)"
+    "title": "$t(common.about)",
+    "heading": "Möt teamet",
+    "description": "Med över 40 års samlad erfarenhet inom elbranschen levererar Amperium Elektriska kvalité i alla led — både som installatör och projektledare. Från små uppdrag till nyckelfärdiga installationer för stora kunder, är målet alltid detsamma: att lyckas med projektet.",
+    "note": "Amperium grundades 2023 av Jimmy Rittervall & Simon Kihl "
   },
   "services": {
     "title": "$t(common.services)"
