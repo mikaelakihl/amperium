@@ -1,8 +1,9 @@
+import type { ReactNode } from 'react';
 import styles from './PageIntro.module.css';
 
 interface PageIntroProps {
   heading: string;
-  description: string;
+  description: ReactNode;
   note?: string;
 }
 export function PageIntro({ heading, description, note }: PageIntroProps) {

@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+.highlight {
+  color: var(--color-text-secondary);
+}
+
+
 @media (--md) {
   .pageIntro {
     gap: var(--space-md);

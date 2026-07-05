@@ -1,5 +1,6 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { PageIntro } from '../../components/PageIntro/PageIntro';
+import pageIntroStyles from '../../components/PageIntro/PageIntro.module.css';
 
 export function About() {
   const { t } = useTranslation();
@@ -7,7 +8,15 @@ export function About() {
     <div className="container">
       <PageIntro
         heading={t('about.heading')}
-        description={t('about.description')}
+        description={
+          <Trans
+            i18nKey="about.description"
+            components={{
+              highlight: <span className={pageIntroStyles.highlight} />,
+            }}
+          />
+        }
+
         note={t('about.note')}
       />
     </div>
