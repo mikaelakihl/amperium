@@ -1,0 +1,13 @@
+.contactList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: stretch;
+  justify-items: center;
+  gap: var(--space-lg);
+}
+
+@media (--md) {
+  .contactList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
