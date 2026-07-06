@@ -2,6 +2,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Badge } from '../Badge/Badge';
 import styles from './Hero.module.css';
 import { ButtonLink } from '../ButtonLink/ButtonLink';
+import { servicesPath } from '../../routes/services';
 
 export function Hero() {
   const { t } = useTranslation();
@@ -22,10 +23,10 @@ export function Hero() {
             />
           </h1>
           <div className={styles.buttonsDesktop}>
-            <ButtonLink to="/contact" size="xs" fullWidth>
+            <ButtonLink to="/kontakt" size="xs" fullWidth>
               {t('hero.contactUs')}
             </ButtonLink>
-            <ButtonLink to="/services" size="xs" variant="secondary" fullWidth>
+            <ButtonLink to={servicesPath} size="xs" variant="secondary" fullWidth>
               {t('hero.ourServices')}
             </ButtonLink>
           </div>
@@ -38,10 +39,10 @@ export function Hero() {
       </div>
 
       <div className={styles.buttons}>
-        <ButtonLink to="/contact" size="xs" fullWidth>
+        <ButtonLink to="/kontakt" size="xs" fullWidth>
           {t('hero.contactUs')}
         </ButtonLink>
-        <ButtonLink to="/services" size="xs" variant="secondary" fullWidth>
+        <ButtonLink to={servicesPath} size="xs" variant="secondary" fullWidth>
           {t('hero.ourServices')}
         </ButtonLink>
       </div>

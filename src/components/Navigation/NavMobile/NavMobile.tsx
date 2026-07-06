@@ -3,6 +3,7 @@ import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Hamburger } from '../../Hamburger/Hamburger';
 import styles from './NavMobile.module.css';
+import { servicesPath } from '../../../routes/services';
 
 export function NavMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ export function NavMobile() {
                 className={({ isActive }) =>
                   `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
                 }
-                to="/about"
+                to="/om-oss"
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.about')}
@@ -44,7 +45,7 @@ export function NavMobile() {
                 className={({ isActive }) =>
                   `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
                 }
-                to="/services"
+                to={servicesPath}
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.services')}
@@ -55,7 +56,7 @@ export function NavMobile() {
                 className={({ isActive }) =>
                   `${styles.link} text-navigation-sm ${isActive ? styles.active : ''} `
                 }
-                to="/contact"
+                to="/kontakt"
                 onClick={() => setMenuOpen(false)}
               >
                 {t('nav.contact')}

@@ -25,18 +25,18 @@ describe('Footer', () => {
     const nav = screen.getByRole('navigation', { name: /tjänster|services/i });
     expect(within(nav).getByRole('link', { name: 'Service' })).toHaveAttribute(
       'href',
-      '/tjanster/c'
+      '/tjanster/service'
     );
     expect(
       within(nav).getByRole('link', {
         name: /elinstallation|electrical installation/i,
       })
-    ).toHaveAttribute('href', '/tjanster/a');
+    ).toHaveAttribute('href', '/tjanster/elinstallation');
     expect(
       within(nav).getByRole('link', {
         name: /projektledning|project management/i,
       })
-    ).toHaveAttribute('href', '/tjanster/b');
+    ).toHaveAttribute('href', '/tjanster/projektledning');
   });
 
   it('renders the company links with the correct routes', () => {
@@ -46,10 +46,10 @@ describe('Footer', () => {
     });
     expect(
       within(nav).getByRole('link', { name: /om oss|about/i })
-    ).toHaveAttribute('href', '/about');
+    ).toHaveAttribute('href', '/om-oss');
     expect(
       within(nav).getByRole('link', { name: /kontakt|contact/i })
-    ).toHaveAttribute('href', '/contact');
+    ).toHaveAttribute('href', '/kontakt');
   });
 
   it('links the phone number with a tel: href', () => {

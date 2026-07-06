@@ -29,10 +29,13 @@ describe('ServicePreview', () => {
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(3);
   });
 
-  it('links every service card to the services page', () => {
+  it('links every service card to its own detail page', () => {
     renderServicePreview();
     const links = screen.getAllByRole('link');
-    expect(links.length).toBeGreaterThan(0);
-    links.forEach((link) => expect(link).toHaveAttribute('href', '/services'));
+    expect(links.map((link) => link.getAttribute('href'))).toEqual([
+      '/tjanster/service',
+      '/tjanster/elinstallation',
+      '/tjanster/projektledning',
+    ]);
   });
 });
