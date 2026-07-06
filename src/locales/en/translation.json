@@ -70,7 +70,7 @@
     "slogan": "We make <br/> electricity <highlight>work</highlight>",
     "electricalInstallation&service": "Electricalinstallation & Service",
     "contactUs": "Contact us",
-    "ourServices": "$t('common.ourServices')"
+    "ourServices": "$t(common.ourServices)"
   },
 
   "banner": {
