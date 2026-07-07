@@ -64,8 +64,9 @@ describe('ServiceDetail', () => {
 
   it('links the contact CTA to the contact page', () => {
     renderServiceDetail(serviceSlugs.project);
-    expect(
-      screen.getByRole('link', { name: /kontakta oss/i })
-    ).toHaveAttribute('href', '/kontakt');
+    expect(screen.getByRole('link', { name: /kontakta oss/i })).toHaveAttribute(
+      'href',
+      '/kontakt'
+    );
   });
 });

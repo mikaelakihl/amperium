@@ -26,7 +26,12 @@ export function Hero() {
             <ButtonLink to="/kontakt" size="xs" fullWidth>
               {t('hero.contactUs')}
             </ButtonLink>
-            <ButtonLink to={servicesPath} size="xs" variant="secondary" fullWidth>
+            <ButtonLink
+              to={servicesPath}
+              size="xs"
+              variant="secondary"
+              fullWidth
+            >
               {t('hero.ourServices')}
             </ButtonLink>
           </div>
