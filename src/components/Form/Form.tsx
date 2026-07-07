@@ -47,6 +47,15 @@ export function Form() {
 
     if (hasError) {
       setSubmitted(false);
+
+      if (!name.trim()) {
+        form.fullName.focus();
+      } else if (!email.trim() || !email.includes('@')) {
+        form.epost.focus();
+      } else {
+        form.message.focus();
+      }
+
       return;
     }
 
