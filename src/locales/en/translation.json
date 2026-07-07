@@ -86,7 +86,18 @@
     "errors": {
       "required": "This field is required",
       "invalidEmail": "Enter a valid email address"
-    }
+    },
+    "contactDetails": "Contactdetails",
+    "openingHours": "Openinghours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "today": "Today",
+    "closed": "Closed"
   },
   "loading": "Loading...",
   "footer": {

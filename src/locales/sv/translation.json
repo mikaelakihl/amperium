@@ -82,7 +82,18 @@
     "errors": {
       "required": "Fältet är obligatoriskt",
       "invalidEmail": "Ange en giltig e-postadress"
-    }
+    },
+    "contactDetails": "Kontaktuppgifter",
+    "openingHours": "Öppettider",
+    "monday": "Måndag",
+    "tuesday": "Tisdag",
+    "wednesday": "Onsdag",
+    "thursday": "Torsdag",
+    "friday": "Fredag",
+    "saturday": "Lördag",
+    "sunday": "Söndag",
+    "today": "Idag",
+    "closed": "Stängt"
   },
   "loading": "Laddar...",
   "footer": {
