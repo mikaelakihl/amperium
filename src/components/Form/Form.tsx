@@ -28,17 +28,19 @@ export function Form() {
         placeholder={t('contact.message')}
         required
       />
-      <Button fullWidth type="submit" iconLeft={<Send />}>
-        {t('contact.requestQuote')}
-      </Button>
-      <Button
-        fullWidth
-        type="reset"
-        iconLeft={<Trash color="var(--color-action-primary)" />}
-        variant="secondary"
-      >
-        {t('contact.clearForm')}
-      </Button>
+      <div className={styles.buttons}>
+        <Button fullWidth type="submit" iconLeft={<Send />}>
+          {t('contact.requestQuote')}
+        </Button>
+        <Button
+          fullWidth
+          type="reset"
+          iconLeft={<Trash color="var(--color-action-primary)" />}
+          variant="secondary"
+        >
+          {t('contact.clearForm')}
+        </Button>
+      </div>
     </form>
   );
 }

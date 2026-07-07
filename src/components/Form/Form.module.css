@@ -4,10 +4,20 @@
   gap: var(--space-lg);
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
 @media (--md) {
   .form {
     background-color: var(--color-background-elevated);
     padding: var(--space-2xl);
     border-radius: var(--radius-md);
+  }
+
+  .buttons {
+    flex-direction: row;
   }
 }
