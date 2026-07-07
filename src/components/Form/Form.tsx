@@ -16,9 +16,15 @@ export function Form() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    const name = form.fullName.value;
-    const email = form.epost.value;
-    const message = form.message.value;
+    const nameInput = form.elements.namedItem('fullName') as HTMLInputElement;
+    const emailInput = form.elements.namedItem('epost') as HTMLInputElement;
+    const messageInput = form.elements.namedItem(
+      'message'
+    ) as HTMLTextAreaElement;
+
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const message = messageInput.value;
     let hasError = false;
 
     if (!name.trim()) {
@@ -49,11 +55,11 @@ export function Form() {
       setSubmitted(false);
 
       if (!name.trim()) {
-        form.fullName.focus();
+        nameInput.focus();
       } else if (!email.trim() || !email.includes('@')) {
-        form.epost.focus();
+        emailInput.focus();
       } else {
-        form.message.focus();
+        messageInput.focus();
       }
 
       return;
@@ -74,6 +80,7 @@ export function Form() {
   return (
     <form
       className={styles.form}
+      noValidate
       onSubmit={handleSubmit}
       onReset={handleReset}
     >
