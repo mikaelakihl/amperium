@@ -1,13 +1,13 @@
-import styles from './Input.module.css'
+import styles from './Input.module.css';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  placeholder: string
-  icon?: React.ReactNode
-  invalid?: boolean
-  errorMessage?: string
-  id: string
-  fullWidth?: boolean
-  label?: string
+  placeholder: string;
+  icon?: React.ReactNode;
+  invalid?: boolean;
+  errorMessage?: string;
+  id: string;
+  fullWidth?: boolean;
+  label?: string;
 }
 
 export function Input({
@@ -31,7 +31,9 @@ export function Input({
         </label>
       )}
       <div
-        className={[styles.inputContainer, fullWidth && styles.fullWidth].filter(Boolean).join(' ')}
+        className={[styles.inputContainer, fullWidth && styles.fullWidth]
+          .filter(Boolean)
+          .join(' ')}
         data-disabled={disabled ? '' : undefined}
       >
         {icon && (
@@ -61,5 +63,5 @@ export function Input({
         </p>
       )}
     </div>
-  )
+  );
 }

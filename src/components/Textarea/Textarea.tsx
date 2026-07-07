@@ -1,12 +1,12 @@
-import styles from './Textarea.module.css'
+import styles from './Textarea.module.css';
 
 interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
-  id: string
-  label?: string
-  placeholder: string
-  invalid?: boolean
-  errorMessage?: string
-  fullWidth?: boolean
+  id: string;
+  label?: string;
+  placeholder: string;
+  invalid?: boolean;
+  errorMessage?: string;
+  fullWidth?: boolean;
 }
 
 export function Textarea({
@@ -30,7 +30,9 @@ export function Textarea({
       )}
       <textarea
         id={id}
-        className={[styles.textarea, fullWidth && styles.fullWidth].filter(Boolean).join(' ')}
+        className={[styles.textarea, fullWidth && styles.fullWidth]
+          .filter(Boolean)
+          .join(' ')}
         placeholder={placeholder}
         disabled={disabled}
         required={required}
@@ -44,5 +46,5 @@ export function Textarea({
         </p>
       )}
     </div>
-  )
+  );
 }
