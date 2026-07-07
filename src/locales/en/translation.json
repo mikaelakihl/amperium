@@ -76,7 +76,12 @@
   },
   "contact": {
     "title": "$t(common.contact)",
-    "imageUnavailable": "No image available"
+    "imageUnavailable": "No image available",
+    "name": "Name",
+    "epost": "E-mail",
+    "message": "Message",
+    "requestQuote": "Request quote",
+    "clearForm": "Clear form"
   },
   "loading": "Loading...",
   "footer": {

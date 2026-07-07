@@ -72,7 +72,12 @@
   },
   "contact": {
     "title": "$t(common.contact)",
-    "imageUnavailable": "Ingen bild kunde visas"
+    "imageUnavailable": "Ingen bild kunde visas",
+    "name": "Namn",
+    "epost": "E-post",
+    "message": "Meddelande",
+    "requestQuote": "Begär en offert",
+    "clearForm": "Rensa formulär"
   },
   "loading": "Laddar...",
   "footer": {
