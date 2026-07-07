@@ -51,7 +51,8 @@
     "heading": "$t(common.ourServices)",
     "description": "Med lång erfarenhet inom el hjälper vi både privatpersoner och företag - snabbt, säkert och med hög kvalitet i varje uppdrag.<highlight> Utforska våra tjänster nedan</highlight>",
     "detail": {
-      "backLink": "Tillbaka till tjänster",
+      "backLink": "$t(common.services)",
+      "ctaHeading": "Kontakta oss för en kostnadsfri offert",
       "service": {
         "heading": "Service och underhåll",
         "description": "Elanläggningen kan strula när som helst — vi finns här när det händer. Vi prioriterar snabb felsökning och åtgärd, och erbjuder även förebyggande underhåll för dig som vill ligga steget före. Exempelvis för fastigheter ",

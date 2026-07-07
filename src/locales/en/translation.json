@@ -51,11 +51,16 @@
     "heading": "$t(common.ourServices)",
     "description": "With extensive experience in electrical work, we help both private individuals and businesses - quickly, safely, and with high quality in every job. <highlight>Explore our services below</highlight>",
     "detail": {
-      "backLink": "Back to services",
+      "backLink": "$t(common.services)",
+      "ctaHeading": "Contact us for a free quote",
       "service": {
         "heading": "Service and maintenance",
         "description": "Your electrical system can act up at any time — we're here when it does. We prioritize fast troubleshooting and repairs, and also offer preventive maintenance for those who want to stay one step ahead. For example, for properties ",
-        "labels": ["Emergency service", "Troubleshooting", "Preventive maintenance"]
+        "labels": [
+          "Emergency service",
+          "Troubleshooting",
+          "Preventive maintenance"
+        ]
       },
       "electrical": {
         "heading": "Electrical installations",

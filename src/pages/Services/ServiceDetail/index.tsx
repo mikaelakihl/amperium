@@ -18,25 +18,18 @@ export function ServiceDetail() {
   if (!detail) {
     return <Navigate to={servicesPath} replace />;
   }
+  const labels = t(detail.labelsKey, { returnObjects: true }) as string[];
 
   return (
     <div className="container">
-      <ButtonLink
-        iconLeft={<ArrowLeft />}
-        variant="link"
-        to={servicesPath}
-        className={styles.backLink}
-      >
-        {t('services.detail.backLink')}
-      </ButtonLink>
-      <PageIntro
-        heading={t(detail.headingKey)}
-        description={t(detail.descriptionKey)}
-      />
-      <div className={styles.pills}>
-        {detail.labels.map((label) => (
-          <Pill key={label}>{label}</Pill>
-        ))}
+          {t('services.detail.backLink')}
+          <ul className={styles.pills}>
+            {labels.map((label) => (
+              <li key={label}>
+                <Pill>{label}</Pill>
+              </li>
+            ))}
+          </ul>
       </div>
     </div>
   );
