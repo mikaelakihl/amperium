@@ -53,18 +53,18 @@
     "detail": {
       "backLink": "Back to services",
       "service": {
-        "heading": "Fast help when things go wrong",
-        "description": "Got an urgent electrical fault in the middle of the night, or a system acting up and disrupting your business? We're here for you. With deep experience and broad expertise, we respond quickly and fix the problem - big or small.",
-        "labels": ["On-call", "Troubleshooting", "Urgent callouts"]
+        "heading": "Service and maintenance",
+        "description": "Your electrical system can act up at any time — we're here when it does. We prioritize fast troubleshooting and repairs, and also offer preventive maintenance for those who want to stay one step ahead. For example, for properties ",
+        "labels": ["Emergency service", "Troubleshooting", "Preventive maintenance"]
       },
       "electrical": {
-        "heading": "Electrical installation from the ground up",
-        "description": "Building new, renovating, or upgrading an existing electrical system? We help you all the way - from planning and permits to installation and final inspection, always with safety and quality in focus.",
+        "heading": "Electrical installations",
+        "description": "With extensive and solid experience in electrical installations, we're here for you — whether it's a smaller job at home or a larger project at the workplace. ",
         "labels": ["New installation", "Renovation", "Upgrading"]
       },
       "project": {
         "heading": "Project management consulting",
-        "description": "Taken on a big project that needs backup on the leadership side? Or maybe you have more service requests than you can keep up with? We're here for you. With a deep well of experience, we can provide project managers for both large, complex projects and smaller ones.",
+        "description": "Have a large project that needs reinforcement on the leadership side? Or a pile of service requests you can't keep up with? We step in. With broad experience in both large, complex projects and smaller assignments, we're here as project managers whenever you need us.",
         "labels": ["Leadership", "Planning", "Big & small projects"]
       }
     }
