@@ -4,9 +4,17 @@
   gap: var(--space-sm);
 }
 
-.contactInfoItem {
-  display: flex;
-  gap: var(--space-sm);
-  align-items: center;
+.contactInfo a {
+  color: var(--color-text-primary);
+}
+
+.contactInfo a svg {
   color: var(--color-action-primary);
 }
+
+/* @media (--md) {
+  .contactInfo {
+    flex-direction: row;
+
+  }
+} */
