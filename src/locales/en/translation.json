@@ -32,6 +32,7 @@
     "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
     "serviceCardElectricalDescription": "New installation, renovation, and upgrading of electrical systems",
     "serviceCardProjectTitle": "$t(common.projectManagement)",
+    "serviceCardProjectDescription": "Consultation and planning from idea to finished project",
     "benefitBannerCertifiedTitle": "Certified",
     "benefitBannerCertifiedDescription": "All our electricians are certified",
     "benefitBannerResponseTitle": "Fast response",
@@ -48,7 +49,25 @@
   "services": {
     "title": "$t(common.services)",
     "heading": "$t(common.ourServices)",
-    "description": "With extensive experience in electrical work, we help both private individuals and businesses - quickly, safely, and with high quality in every job. <highlight>Explore our services below</highlight>"
+    "description": "With extensive experience in electrical work, we help both private individuals and businesses - quickly, safely, and with high quality in every job. <highlight>Explore our services below</highlight>",
+    "detail": {
+      "backLink": "Back to services",
+      "service": {
+        "heading": "Fast help when things go wrong",
+        "description": "Got an urgent electrical fault in the middle of the night, or a system acting up and disrupting your business? We're here for you. With deep experience and broad expertise, we respond quickly and fix the problem - big or small.",
+        "labels": ["On-call", "Troubleshooting", "Urgent callouts"]
+      },
+      "electrical": {
+        "heading": "Electrical installation from the ground up",
+        "description": "Building new, renovating, or upgrading an existing electrical system? We help you all the way - from planning and permits to installation and final inspection, always with safety and quality in focus.",
+        "labels": ["New installation", "Renovation", "Upgrading"]
+      },
+      "project": {
+        "heading": "Project management consulting",
+        "description": "Taken on a big project that needs backup on the leadership side? Or maybe you have more service requests than you can keep up with? We're here for you. With a deep well of experience, we can provide project managers for both large, complex projects and smaller ones.",
+        "labels": ["Leadership", "Planning", "Big & small projects"]
+      }
+    }
   },
   "contact": {
     "title": "$t(common.contact)",
