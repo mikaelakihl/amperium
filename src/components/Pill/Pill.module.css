@@ -6,3 +6,14 @@
   border-radius: var(--radius-md);
   display: inline-block;
 }
+
+.secondary {
+  background-color: rgba(249, 113, 2, 0.257);
+  color: var(--color-text-secondary);
+  padding-inline: var(--space-sm);
+  padding-block: var(--space-xs);
+  text-transform: capitalize;
+  font-size: 10px;
+  letter-spacing: normal;
+  border: solid 0.5px rgba(253, 204, 163, 0.298);
+}
