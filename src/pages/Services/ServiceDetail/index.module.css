@@ -1,0 +1,9 @@
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.backLink {
+  color: var(--color-action-secondary);
+}
