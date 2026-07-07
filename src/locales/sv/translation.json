@@ -72,7 +72,17 @@
   },
   "contact": {
     "title": "$t(common.contact)",
-    "imageUnavailable": "Ingen bild kunde visas"
+    "imageUnavailable": "Ingen bild kunde visas",
+    "name": "Namn",
+    "epost": "E-post",
+    "message": "Meddelande",
+    "requestQuote": "Begär en offert",
+    "clearForm": "Rensa formulär",
+    "success": "Tack! Vi hör av oss inom kort.",
+    "errors": {
+      "required": "Fältet är obligatoriskt",
+      "invalidEmail": "Ange en giltig e-postadress"
+    }
   },
   "loading": "Laddar...",
   "footer": {
