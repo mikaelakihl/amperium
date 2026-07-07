@@ -45,6 +45,7 @@ export function Input({
         )}
         <input
           type="text"
+          id={id}
           className={styles.input}
           placeholder={placeholder}
           {...props}
