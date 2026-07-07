@@ -1,0 +1,8 @@
+.pill {
+  color: var(--color-text-secondary);
+  background-color: var(--color-background-elevated);
+  padding-inline: var(--space-lg);
+  padding-block: var(--space-sm);
+  border-radius: var(--radius-md);
+  display: inline-block;
+}

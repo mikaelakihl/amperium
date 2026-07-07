@@ -1,0 +1,64 @@
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.backLink {
+  color: var(--color-action-secondary);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.serviceDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2xl);
+}
+
+.separator {
+  width: 100%;
+  border-top: 0.5px solid var(--color-border-subtle);
+}
+
+.ctaHeading {
+  margin: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--space-md);
+}
+
+.contactBtn {
+  width: 100%;
+}
+
+@media (--md) {
+  .serviceDetail {
+    gap: var(--space-3xl);
+  }
+  .contactBtn {
+    width: auto;
+  }
+
+  .content {
+    gap: var(--space-xl);
+  }
+
+  .cta {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-2xl);
+  }
+}

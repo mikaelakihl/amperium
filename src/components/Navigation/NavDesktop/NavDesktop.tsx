@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router';
 import styles from './NavDesktop.module.css';
 import { useTranslation } from 'react-i18next';
+import { servicesPath } from '../../../routes/services';
 
 export function NavDesktop() {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ export function NavDesktop() {
             className={({ isActive }) =>
               `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
             }
-            to="/about"
+            to="/om-oss"
           >
             {t('nav.about')}
           </NavLink>
@@ -32,7 +33,7 @@ export function NavDesktop() {
             className={({ isActive }) =>
               `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
             }
-            to="/services"
+            to={servicesPath}
           >
             {t('nav.services')}
           </NavLink>
@@ -42,7 +43,7 @@ export function NavDesktop() {
             className={({ isActive }) =>
               `${styles.link} text-navigation-sm ${isActive ? styles.active : ''}`
             }
-            to="/contact"
+            to="/kontakt"
           >
             {t('nav.contact')}
           </NavLink>

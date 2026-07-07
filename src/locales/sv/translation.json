@@ -49,7 +49,26 @@
   "services": {
     "title": "$t(common.services)",
     "heading": "$t(common.ourServices)",
-    "description": "Med lång erfarenhet inom el hjälper vi både privatpersoner och företag - snabbt, säkert och med hög kvalitet i varje uppdrag.<highlight> Utforska våra tjänster nedan</highlight>"
+    "description": "Med lång erfarenhet inom el hjälper vi både privatpersoner och företag - snabbt, säkert och med hög kvalitet i varje uppdrag.<highlight> Utforska våra tjänster nedan</highlight>",
+    "detail": {
+      "backLink": "$t(common.services)",
+      "ctaHeading": "Kontakta oss för en kostnadsfri offert",
+      "service": {
+        "heading": "Service och underhåll",
+        "description": "Elanläggningen kan strula när som helst — vi finns här när det händer. Vi prioriterar snabb felsökning och åtgärd, och erbjuder även förebyggande underhåll för dig som vill ligga steget före. Exempelvis för fastigheter ",
+        "labels": ["Akut service", "Felsökning", "Förebyggande underhåll"]
+      },
+      "electrical": {
+        "heading": "Elinstallationer",
+        "description": "Med lång och gedigen erfarenhet inom elinstallationer finns vi här för dig — oavsett om det handlar om ett mindre arbete hemma eller ett större projekt på arbetsplatsen. ",
+        "labels": ["Nyinstallation", "Ombyggnad", "Uppgradering"]
+      },
+      "project": {
+        "heading": "Konsult inom projektledning",
+        "description": "Stort projekt som behöver förstärkning på ledarskapssidan? Eller en hög av serviceförfrågningar som inte hinns med? Vi rycker in. Med bred erfarenhet av både stora, komplexa projekt och mindre uppdrag finns vi här som projektledare när ni behöver det.",
+        "labels": ["Ledarskap", "Planering", "Stora & små projekt"]
+      }
+    }
   },
   "contact": {
     "title": "$t(common.contact)",

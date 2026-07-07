@@ -25,7 +25,7 @@ describe('Hero', () => {
       name: /kontakta oss|contact us/i,
     });
     expect(links.length).toBeGreaterThan(0);
-    links.forEach((link) => expect(link).toHaveAttribute('href', '/contact'));
+    links.forEach((link) => expect(link).toHaveAttribute('href', '/kontakt'));
   });
 
   it('links every "our services" button to the services page', () => {
@@ -34,7 +34,7 @@ describe('Hero', () => {
       name: /våra tjänster|our services/i,
     });
     expect(links.length).toBeGreaterThan(0);
-    links.forEach((link) => expect(link).toHaveAttribute('href', '/services'));
+    links.forEach((link) => expect(link).toHaveAttribute('href', '/tjanster'));
   });
 
   it('renders a credit rating badge for each badge slot', () => {

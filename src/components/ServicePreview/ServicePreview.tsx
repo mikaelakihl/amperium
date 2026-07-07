@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { SectionIntro } from '../SectionIntro/SectionIntro';
 import { ServiceCard } from '../ServiceCard/ServiceCard';
 import { ClipboardList, Wrench, Zap } from 'lucide-react';
+import { serviceDetailPath } from '../../routes/services';
 import styles from './ServicePreview.module.css';
 
 interface ServicePreviewProps {
@@ -24,19 +25,19 @@ export function ServicePreview({ showIntro = true }: ServicePreviewProps) {
             title={t('home.serviceCardServiceTitle')}
             description={t('home.serviceCardServiceDescription')}
             icon={<Wrench />}
-            linkTo="/services"
+            linkTo={serviceDetailPath('service')}
           />
           <ServiceCard
             title={t('home.serviceCardElectricalTitle')}
             description={t('home.serviceCardElectricalDescription')}
             icon={<Zap />}
-            linkTo="/services"
+            linkTo={serviceDetailPath('electrical')}
           />
           <ServiceCard
             title={t('home.serviceCardProjectTitle')}
             description={t('home.serviceCardProjectDescription')}
             icon={<ClipboardList />}
-            linkTo="/services"
+            linkTo={serviceDetailPath('project')}
           />
         </div>
       </div>

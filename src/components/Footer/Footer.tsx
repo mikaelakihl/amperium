@@ -3,6 +3,7 @@ import logo from '../../assets/WhiteAmperium24x1024.png';
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Camera, Copyright } from 'lucide-react';
+import { serviceDetailPath } from '../../routes/services';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -21,15 +22,17 @@ export function Footer() {
             </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
-                <Link to="/tjanster/c">Service</Link>
+                <Link to={serviceDetailPath('service')}>Service</Link>
               </li>
               <li>
-                <Link to="/tjanster/a">
+                <Link to={serviceDetailPath('electrical')}>
                   {t('footer.electricalInstallation')}
                 </Link>
               </li>
               <li>
-                <Link to="/tjanster/b">{t('footer.projectManagement')}</Link>
+                <Link to={serviceDetailPath('project')}>
+                  {t('footer.projectManagement')}
+                </Link>
               </li>
             </ul>
           </nav>
@@ -39,10 +42,10 @@ export function Footer() {
             </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
-                <Link to="/about">{t('footer.about')}</Link>
+                <Link to="/om-oss">{t('footer.about')}</Link>
               </li>
               <li>
-                <Link to="/contact">{t('footer.contact')}</Link>
+                <Link to="/kontakt">{t('footer.contact')}</Link>
               </li>
             </ul>
           </nav>
