@@ -10,11 +10,17 @@
   gap: var(--space-md);
 }
 
+.success {
+  color: var(--color-feedback-success);
+}
+
 @media (--md) {
   .form {
     background-color: var(--color-background-elevated);
     padding: var(--space-2xl);
     border-radius: var(--radius-md);
+    border: 0.5px solid var(--color-border-subtle);
+    box-shadow: var(--shadow-dark-md);
   }
 
   .buttons {

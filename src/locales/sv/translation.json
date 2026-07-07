@@ -77,7 +77,12 @@
     "epost": "E-post",
     "message": "Meddelande",
     "requestQuote": "Begär en offert",
-    "clearForm": "Rensa formulär"
+    "clearForm": "Rensa formulär",
+    "success": "Tack! Vi hör av oss inom kort.",
+    "errors": {
+      "required": "Fältet är obligatoriskt",
+      "invalidEmail": "Ange en giltig e-postadress"
+    }
   },
   "loading": "Laddar...",
   "footer": {

@@ -81,7 +81,12 @@
     "epost": "E-mail",
     "message": "Message",
     "requestQuote": "Request quote",
-    "clearForm": "Clear form"
+    "clearForm": "Clear form",
+    "success": "Thanks! We'll be in touch shortly.",
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Enter a valid email address"
+    }
   },
   "loading": "Loading...",
   "footer": {
