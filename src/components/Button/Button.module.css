@@ -47,6 +47,13 @@
   aspect-ratio: 1;
 }
 
+.iconLeft,
+.iconRight,
+.icon {
+  display: inline-flex;
+  align-items: center;
+}
+
 .primary {
   background-color: var(--color-action-primary);
   color: var(--color-text-inverse);
@@ -72,6 +79,7 @@
   min-height: unset;
   min-width: unset;
   border-radius: 0;
+  gap: var(--space-sm);
 }
 
 .button.ghost:hover:not(:disabled) {
