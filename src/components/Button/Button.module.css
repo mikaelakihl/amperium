@@ -47,13 +47,21 @@
   aspect-ratio: 1;
 }
 
+.iconLeft,
+.iconRight,
+.icon {
+  display: inline-flex;
+  align-items: center;
+}
+
 .primary {
   background-color: var(--color-action-primary);
-  color: var(--color-green-100);
+  color: var(--color-text-inverse);
 }
 .secondary {
-  background-color: var(--color-green-100);
-  color: var(--color-green-1000);
+  background-color: var(--color-neutral-1000);
+  color: var(--color-text-primary);
+  border: solid 1px var(--color-action-primary);
 }
 .tertiary {
   background-color: var(--color-red-700);
@@ -71,6 +79,7 @@
   min-height: unset;
   min-width: unset;
   border-radius: 0;
+  gap: var(--space-sm);
 }
 
 .button.ghost:hover:not(:disabled) {

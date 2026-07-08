@@ -1,0 +1,46 @@
+import { useTranslation } from 'react-i18next';
+import { SectionIntro } from '../SectionIntro/SectionIntro';
+import { ServiceCard } from '../ServiceCard/ServiceCard';
+import { ClipboardList, Wrench, Zap } from 'lucide-react';
+import { serviceDetailPath } from '../../routes/services';
+import styles from './ServicePreview.module.css';
+
+interface ServicePreviewProps {
+  showIntro?: boolean;
+}
+
+export function ServicePreview({ showIntro = true }: ServicePreviewProps) {
+  const { t } = useTranslation();
+  return (
+    <section className={styles.servicePreview}>
+      {showIntro && (
+        <SectionIntro
+          label={t('home.servicesPreviewLabel')}
+          heading={t('home.servicesPreviewHeading')}
+        />
+      )}
+      <div className={styles.cards}>
+        <div className={styles.cardContainer}>
+          <ServiceCard
+            title={t('home.serviceCardServiceTitle')}
+            description={t('home.serviceCardServiceDescription')}
+            icon={<Wrench />}
+            linkTo={serviceDetailPath('service')}
+          />
+          <ServiceCard
+            title={t('home.serviceCardElectricalTitle')}
+            description={t('home.serviceCardElectricalDescription')}
+            icon={<Zap />}
+            linkTo={serviceDetailPath('electrical')}
+          />
+          <ServiceCard
+            title={t('home.serviceCardProjectTitle')}
+            description={t('home.serviceCardProjectDescription')}
+            icon={<ClipboardList />}
+            linkTo={serviceDetailPath('project')}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}

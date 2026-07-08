@@ -4,7 +4,10 @@
     "electricalInstallation": "Elinstallation",
     "projectManagement": "Projektledning",
     "about": "Om oss",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "service": "Service",
+    "ourServices": "Våra tjänster",
+    "contactUs": "Kontakta oss"
   },
   "nav": {
     "home": "Hem",
@@ -16,17 +19,83 @@
     "skipToContent": "Hoppa till innehåll"
   },
   "home": {
-    "title": "Hem"
+    "title": "Hem",
+    "aboutPreviewLabel": "$t(common.about)",
+    "aboutPreviewHeading": "Det varma företaget där kvalité är ledordet",
+    "aboutPreviewDescription": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på",
+    "statisticYears": "År i branschen",
+    "statisticProjects": "Genomförda projekt",
+    "statisticCertified": "Certifierade elektriker",
+    "servicesPreviewLabel": "Vad vi gör",
+    "servicesPreviewHeading": "$t(common.ourServices)",
+    "serviceCardServiceTitle": "$t(common.service)",
+    "serviceCardServiceDescription": "Snabb och pålitlig hjälp när något strular - dygnet runt",
+    "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
+    "serviceCardElectricalDescription": "Nyinstallation, ombyggnad och uppgradering av elsystem",
+    "serviceCardProjectTitle": "$t(common.projectManagement)",
+    "serviceCardProjectDescription": "Konsultation och planering från idé till färdigt projekt",
+    "benefitBannerCertifiedTitle": "Certifierade",
+    "benefitBannerCertifiedDescription": "Alla våra elektriker är certifierade",
+    "benefitBannerResponseTitle": "Snabb respons",
+    "benefitBannerResponseDescription": "Vi återkommer inom 24h",
+    "benefitBannerCreditTitle": "God kreditvärdighet",
+    "benefitBannerCreditDescription": "UC-godkända sedan 2024"
   },
   "about": {
-    "title": "$t(common.about)"
+    "title": "$t(common.about)",
+    "heading": "Möt teamet",
+    "description": "<highlight>Med över 40 års samlad erfarenhet inom elbranschen</highlight> levererar Amperium Elektriska kvalité i alla led — både som installatör och projektledare.<br/>Från små uppdrag till nyckelfärdiga installationer för stora kunder, är målet alltid detsamma: att lyckas med projektet.",
+    "note": "Amperium grundades 2023 av Jimmy Rittervall & Simon Kihl "
   },
   "services": {
-    "title": "$t(common.services)"
+    "title": "$t(common.services)",
+    "heading": "$t(common.ourServices)",
+    "description": "Med lång erfarenhet inom el hjälper vi både privatpersoner och företag - snabbt, säkert och med hög kvalitet i varje uppdrag.<highlight> Utforska våra tjänster nedan</highlight>",
+    "detail": {
+      "backLink": "$t(common.services)",
+      "ctaHeading": "Kontakta oss för en kostnadsfri offert",
+      "service": {
+        "heading": "Service och underhåll",
+        "description": "Elanläggningen kan strula när som helst — vi finns här när det händer. Vi prioriterar snabb felsökning och åtgärd, och erbjuder även förebyggande underhåll för dig som vill ligga steget före. Exempelvis för fastigheter ",
+        "labels": ["Akut service", "Felsökning", "Förebyggande underhåll"]
+      },
+      "electrical": {
+        "heading": "Elinstallationer",
+        "description": "Med lång och gedigen erfarenhet inom elinstallationer finns vi här för dig — oavsett om det handlar om ett mindre arbete hemma eller ett större projekt på arbetsplatsen. ",
+        "labels": ["Nyinstallation", "Ombyggnad", "Uppgradering"]
+      },
+      "project": {
+        "heading": "Konsult inom projektledning",
+        "description": "Stort projekt som behöver förstärkning på ledarskapssidan? Eller en hög av serviceförfrågningar som inte hinns med? Vi rycker in. Med bred erfarenhet av både stora, komplexa projekt och mindre uppdrag finns vi här som projektledare när ni behöver det.",
+        "labels": ["Ledarskap", "Planering", "Stora & små projekt"]
+      }
+    }
   },
   "contact": {
-    "title": "$t(common.contact)",
-    "imageUnavailable": "Ingen bild kunde visas"
+    "heading": "$t(common.contactUs)",
+    "description": "<highlight>Fyll i formuläret nedan så återkommer vi med en kostnadsfri offert</highlight> — beskriv gärna vad du behöver hjälp med så kan vi förbereda oss.",
+    "imageUnavailable": "Ingen bild kunde visas",
+    "name": "Namn",
+    "epost": "E-post",
+    "message": "Meddelande",
+    "requestQuote": "Begär en offert",
+    "clearForm": "Rensa formulär",
+    "success": "Tack! Vi hör av oss inom kort.",
+    "errors": {
+      "required": "Fältet är obligatoriskt",
+      "invalidEmail": "Ange en giltig e-postadress"
+    },
+    "contactDetails": "Kontaktuppgifter",
+    "openingHours": "Öppettider",
+    "monday": "Måndag",
+    "tuesday": "Tisdag",
+    "wednesday": "Onsdag",
+    "thursday": "Torsdag",
+    "friday": "Fredag",
+    "saturday": "Lördag",
+    "sunday": "Söndag",
+    "today": "Idag",
+    "closed": "Stängt"
   },
   "loading": "Laddar...",
   "footer": {
@@ -37,5 +106,19 @@
     "contact": "$t(common.contact)",
     "theCompany": "Företaget",
     "allRightsReserved": "Alla rättigheter förbehållna"
+  },
+
+  "hero": {
+    "credit": "Kreditvärdighet",
+    "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
+    "electricalInstallation&service": "Elinstallation & service",
+    "contactUs": "$t(common.contactUs)",
+    "ourServices": "$t(common.ourServices)"
+  },
+
+  "banner": {
+    "electricalInstallation": "$t(common.electricalInstallation)",
+    "projectManagement": "$t(common.projectManagement)",
+    "service": "$t(common.service)"
   }
 }

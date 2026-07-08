@@ -4,7 +4,10 @@
     "electricalInstallation": "Electrical installation",
     "projectManagement": "Project management",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "service": "Service",
+    "ourServices": "Our services",
+    "contactUs": "Contact us"
   },
   "nav": {
     "home": "Home",
@@ -16,17 +19,87 @@
     "skipToContent": "Skip to content"
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "aboutPreviewLabel": "$t(common.about)",
+    "aboutPreviewHeading": "The company that puts quality first",
+    "aboutPreviewDescription": "We offer services in maintenance, electrical installation, and project management consulting. Built on responsiveness and strong leadership, we deliver results you can rely on.",
+    "statisticYears": "Years in business",
+    "statisticProjects": "Completed projects",
+    "statisticCertified": "Certified electricians",
+    "servicesPreviewLabel": "What we do",
+    "servicesPreviewHeading": "$t(common.ourServices)",
+    "serviceCardServiceTitle": "$t(common.service)",
+    "serviceCardServiceDescription": "Fast and reliable help when something goes wrong - around the clock",
+    "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
+    "serviceCardElectricalDescription": "New installation, renovation, and upgrading of electrical systems",
+    "serviceCardProjectTitle": "$t(common.projectManagement)",
+    "serviceCardProjectDescription": "Consultation and planning from idea to finished project",
+    "benefitBannerCertifiedTitle": "Certified",
+    "benefitBannerCertifiedDescription": "All our electricians are certified",
+    "benefitBannerResponseTitle": "Fast response",
+    "benefitBannerResponseDescription": "We get back to you within 24h",
+    "benefitBannerCreditTitle": "Good creditworthiness",
+    "benefitBannerCreditDescription": "UC-approved since 2024"
   },
   "about": {
-    "title": "$t(common.about)"
+    "title": "$t(common.about)",
+    "heading": "Meet the team",
+    "description": "<highlight>With over 40 years of combined experience in the electrical industry,</highlight> Amperium Elektriska delivers quality at every step — both as installer and project manager. From small assignments to turnkey installations for major clients, the goal is always the same:<br/> making the project a success.",
+    "note": "Amperium was founded in 2023 by Jimmy Rittervall & Simon Kihl"
   },
   "services": {
-    "title": "$t(common.services)"
+    "title": "$t(common.services)",
+    "heading": "$t(common.ourServices)",
+    "description": "With extensive experience in electrical work, we help both private individuals and businesses - quickly, safely, and with high quality in every job. <highlight>Explore our services below</highlight>",
+    "detail": {
+      "backLink": "$t(common.services)",
+      "ctaHeading": "Contact us for a free quote",
+      "service": {
+        "heading": "Service and maintenance",
+        "description": "Your electrical system can act up at any time — we're here when it does. We prioritize fast troubleshooting and repairs, and also offer preventive maintenance for those who want to stay one step ahead. For example, for properties ",
+        "labels": [
+          "Emergency service",
+          "Troubleshooting",
+          "Preventive maintenance"
+        ]
+      },
+      "electrical": {
+        "heading": "Electrical installations",
+        "description": "With extensive and solid experience in electrical installations, we're here for you — whether it's a smaller job at home or a larger project at the workplace. ",
+        "labels": ["New installation", "Renovation", "Upgrading"]
+      },
+      "project": {
+        "heading": "Project management consulting",
+        "description": "Have a large project that needs reinforcement on the leadership side? Or a pile of service requests you can't keep up with? We step in. With broad experience in both large, complex projects and smaller assignments, we're here as project managers whenever you need us.",
+        "labels": ["Leadership", "Planning", "Big & small projects"]
+      }
+    }
   },
   "contact": {
-    "title": "$t(common.contact)",
-    "imageUnavailable": "No image available"
+    "heading": "$t(common.contactUs)",
+    "description": "<highlight>Fill in the form below and we'll get back to you with a free quote</highlight> — feel free to describe what you need help with so we can prepare.",
+    "imageUnavailable": "No image available",
+    "name": "Name",
+    "epost": "E-mail",
+    "message": "Message",
+    "requestQuote": "Request quote",
+    "clearForm": "Clear form",
+    "success": "Thanks! We'll be in touch shortly.",
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Enter a valid email address"
+    },
+    "contactDetails": "Contact details",
+    "openingHours": "Opening hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "today": "Today",
+    "closed": "Closed"
   },
   "loading": "Loading...",
   "footer": {
@@ -37,5 +110,19 @@
     "contact": "$t(common.contact)",
     "theCompany": "The company",
     "allRightsReserved": "All rights reserved"
+  },
+
+  "hero": {
+    "credit": "Credit rating",
+    "slogan": "We make <br/> electricity <highlight>work</highlight>",
+    "electricalInstallation&service": "Electricalinstallation & Service",
+    "contactUs": "$t(common.contactUs)",
+    "ourServices": "$t(common.ourServices)"
+  },
+
+  "banner": {
+    "electricalInstallation": "$t(common.electricalInstallation)",
+    "projectManagement": "$t(common.projectManagement)",
+    "service": "$t(common.service)"
   }
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, Phone } from 'lucide-react';
 import placeholder from '../../assets/contacts/placeholder.jpg';
+import { ButtonLink } from '../ButtonLink/ButtonLink';
 import styles from './ContactCard.module.css';
 import { useTranslation } from 'react-i18next';
 
@@ -17,7 +18,7 @@ export function ContactCard({ name, image, phone, email }: ContactCardProps) {
 
   return (
     <div className={styles.contactCard}>
-      <h3 className="text-heading-md">{name}</h3>
+      <h3 className={`text-heading-sm ${styles.contactName}`}>{name}</h3>
       <div className={styles.imgContainer}>
         <img
           src={!image || imageFailed ? placeholder : image}
@@ -28,14 +29,22 @@ export function ContactCard({ name, image, phone, email }: ContactCardProps) {
       </div>
 
       <div className={styles.contactInfo}>
-        <div className={`text-body-sm ${styles.contactInfoItem}`}>
-          <Phone aria-hidden="true" size={16} />
-          <a href={`tel:${phone}`}>{phone}</a>
-        </div>
-        <div className={`text-body-sm ${styles.contactInfoItem}`}>
-          <Mail aria-hidden="true" size={16} />
-          <a href={`mailto:${email}`}>{email}</a>
-        </div>
+        <ButtonLink
+          href={`tel:${phone}`}
+          variant="link"
+          className="text-body-sm"
+          iconLeft={<Phone aria-hidden="true" size={16} />}
+        >
+          {phone}
+        </ButtonLink>
+        <ButtonLink
+          href={`mailto:${email}`}
+          variant="link"
+          className="text-body-sm"
+          iconLeft={<Mail aria-hidden="true" size={16} />}
+        >
+          {email}
+        </ButtonLink>
       </div>
     </div>
   );

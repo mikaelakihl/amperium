@@ -35,7 +35,7 @@ describe('NavDesktop', () => {
   });
 
   it('marks the link for the current route as active', () => {
-    const { desktopNav } = renderNavigation('/about');
+    const { desktopNav } = renderNavigation('/om-oss');
     const aboutLink = within(desktopNav).getByRole('link', {
       name: /about|om oss/i,
     });
@@ -43,7 +43,7 @@ describe('NavDesktop', () => {
   });
 
   it('does not mark the home link as active on another route', () => {
-    const { desktopNav } = renderNavigation('/about');
+    const { desktopNav } = renderNavigation('/om-oss');
     const homeLink = within(desktopNav).getByRole('link', {
       name: /^home$|^hem$/i,
     });
