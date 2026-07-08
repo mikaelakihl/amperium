@@ -6,6 +6,7 @@ import { Pill } from '../../../components/Pill/Pill';
 import { ButtonLink } from '../../../components/ButtonLink/ButtonLink';
 import { PageIntro } from '../../../components/PageIntro/PageIntro';
 import { serviceDetails } from './content';
+import { usePageTitle } from '../../../hooks/usePageTitle';
 import styles from './index.module.css';
 
 export function ServiceDetail() {
@@ -14,6 +15,8 @@ export function ServiceDetail() {
   const serviceId = slug ? getServiceIdFromSlug(slug) : undefined;
 
   const detail = serviceDetails.find((item) => item.id === serviceId);
+
+  usePageTitle(detail ? t(detail.headingKey) : '');
 
   if (!detail) {
     return <Navigate to={servicesPath} replace />;

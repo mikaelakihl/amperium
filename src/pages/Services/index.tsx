@@ -2,9 +2,11 @@ import { Trans, useTranslation } from 'react-i18next';
 import { PageIntro } from '../../components/PageIntro/PageIntro';
 import pageIntroStyles from '../../components/PageIntro/PageIntro.module.css';
 import { ServicePreview } from '../../components/ServicePreview/ServicePreview';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export function Services() {
   const { t } = useTranslation();
+  usePageTitle(t('common.services'));
   return (
     <div className="container">
       <PageIntro
