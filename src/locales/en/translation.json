@@ -6,7 +6,8 @@
     "about": "About",
     "contact": "Contact",
     "service": "Service",
-    "ourServices": "Our services"
+    "ourServices": "Our services",
+    "contactUs": "Contact us"
   },
   "nav": {
     "home": "Home",
@@ -43,7 +44,7 @@
   "about": {
     "title": "$t(common.about)",
     "heading": "Meet the team",
-    "description": "<highlight>With over 40 years of combined experience in the electrical industry,</highlight> Amperium Elektriska delivers quality at every step — both as installer and project manager. From small assignments to turnkey installations for major clients, the goal is always the same:<br/ > making the project a success.",
+    "description": "<highlight>With over 40 years of combined experience in the electrical industry,</highlight> Amperium Elektriska delivers quality at every step — both as installer and project manager. From small assignments to turnkey installations for major clients, the goal is always the same:<br/> making the project a success.",
     "note": "Amperium was founded in 2023 by Jimmy Rittervall & Simon Kihl"
   },
   "services": {
@@ -75,7 +76,8 @@
     }
   },
   "contact": {
-    "title": "$t(common.contact)",
+    "heading": "$t(common.contactUs)",
+    "description": "<highlight>Fill in the form below and we'll get back to you with a free quote</highlight> — feel free to describe what you need help with so we can prepare.",
     "imageUnavailable": "No image available",
     "name": "Name",
     "epost": "E-mail",
@@ -86,7 +88,18 @@
     "errors": {
       "required": "This field is required",
       "invalidEmail": "Enter a valid email address"
-    }
+    },
+    "contactDetails": "Contact details",
+    "openingHours": "Opening hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "today": "Today",
+    "closed": "Closed"
   },
   "loading": "Loading...",
   "footer": {
@@ -103,7 +116,7 @@
     "credit": "Credit rating",
     "slogan": "We make <br/> electricity <highlight>work</highlight>",
     "electricalInstallation&service": "Electricalinstallation & Service",
-    "contactUs": "Contact us",
+    "contactUs": "$t(common.contactUs)",
     "ourServices": "$t(common.ourServices)"
   },
 

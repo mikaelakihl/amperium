@@ -6,7 +6,8 @@
     "about": "Om oss",
     "contact": "Kontakt",
     "service": "Service",
-    "ourServices": "Våra tjänster"
+    "ourServices": "Våra tjänster",
+    "contactUs": "Kontakta oss"
   },
   "nav": {
     "home": "Hem",
@@ -71,7 +72,8 @@
     }
   },
   "contact": {
-    "title": "$t(common.contact)",
+    "heading": "$t(common.contactUs)",
+    "description": "<highlight>Fyll i formuläret nedan så återkommer vi med en kostnadsfri offert</highlight> — beskriv gärna vad du behöver hjälp med så kan vi förbereda oss.",
     "imageUnavailable": "Ingen bild kunde visas",
     "name": "Namn",
     "epost": "E-post",
@@ -82,7 +84,18 @@
     "errors": {
       "required": "Fältet är obligatoriskt",
       "invalidEmail": "Ange en giltig e-postadress"
-    }
+    },
+    "contactDetails": "Kontaktuppgifter",
+    "openingHours": "Öppettider",
+    "monday": "Måndag",
+    "tuesday": "Tisdag",
+    "wednesday": "Onsdag",
+    "thursday": "Torsdag",
+    "friday": "Fredag",
+    "saturday": "Lördag",
+    "sunday": "Söndag",
+    "today": "Idag",
+    "closed": "Stängt"
   },
   "loading": "Laddar...",
   "footer": {
@@ -99,7 +112,7 @@
     "credit": "Kreditvärdighet",
     "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
     "electricalInstallation&service": "Elinstallation & service",
-    "contactUs": "Kontakta oss",
+    "contactUs": "$t(common.contactUs)",
     "ourServices": "$t(common.ourServices)"
   },
 

@@ -52,4 +52,16 @@
 - Completed about and services page by adding all needed components.
 - Added a margin-top in footer component to create a larger seperation from the content.
 - Added a new space token, --space-5xl
-- Updated ServicePreview with optional showIntro prop to be able to reuse it in services page
+- Updated ServicePreview with optional showIntro prop to be able to reuse it in services
+
+## 2026-07-07
+
+- Translate routes to swedish intead of english to improve SEO later
+- Created new components Pill, ServiceDetail, Form, TitleCard, ContactDetails and OpeningHours
+- ServiceDetails included slug-based routing for each ServiceCard
+- Form inlcudes "imported" Input and TextArea from my designsystem.
+- Added OpeningHours, ContactDetails and Form in Contact page
+- Finished translations for OpeningHours (days, today/closed)
+- Refactored ContactDetails and ContactCard to use ButtonLink instead of plain links
+- Fixed a bug in ButtonIcon where icon/text wasn't centered (missing css classes) and added more spacing between icon and text
+- Fixed contact links so text is white but icons stay orange

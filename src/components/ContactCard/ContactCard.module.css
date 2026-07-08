@@ -20,19 +20,15 @@
   gap: var(--space-sm);
 }
 
-.contactInfoItem {
-  display: flex;
-  gap: var(--space-sm);
-  align-items: center;
+.contactInfo a {
+  color: var(--color-action-secondary);
+}
+
+.contactInfo a:hover {
   color: var(--color-action-primary);
 }
 
-a {
-  color: var(--color-action-secondary);
-  text-decoration: none;
-}
-
-a:hover {
+.contactInfo a svg {
   color: var(--color-action-primary);
 }
 
