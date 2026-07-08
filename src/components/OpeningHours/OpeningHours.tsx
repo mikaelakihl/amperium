@@ -9,7 +9,7 @@ export function OpeningHours() {
   const todayIndex = getTodayIndex();
 
   return (
-    <TitledCard label={t('contact.openingHours')}>
+    <TitledCard label={t('contact.hours.label')}>
       <dl className={styles.list}>
         {openingHours.map((item, index) => {
           const isToday = index === todayIndex;
@@ -23,15 +23,15 @@ export function OpeningHours() {
               <dt
                 className={`text-body-sm ${styles.day} ${isToday ? styles.today : ''}`}
               >
-                {t(`contact.${item.dayKey}`)}
+                {t(`contact.hours.${item.dayKey}`)}
                 {isToday && (
-                  <Pill variant="secondary">{t('contact.today')}</Pill>
+                  <Pill variant="secondary">{t('contact.hours.today')}</Pill>
                 )}
               </dt>
               <dd
                 className={`text-body-sm ${styles.hours} ${isToday ? styles.today : ''}`}
               >
-                {item.closed ? t('contact.closed') : item.hours}
+                {item.closed ? t('contact.hours.closed') : item.hours}
               </dd>
             </div>
           );

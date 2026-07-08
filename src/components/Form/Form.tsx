@@ -28,24 +28,24 @@ export function Form() {
     let hasError = false;
 
     if (!name.trim()) {
-      setNameError(t('contact.errors.required'));
+      setNameError(t('contact.form.errors.required'));
       hasError = true;
     } else {
       setNameError('');
     }
 
     if (!email.trim()) {
-      setEmailError(t('contact.errors.required'));
+      setEmailError(t('contact.form.errors.required'));
       hasError = true;
     } else if (!email.includes('@')) {
-      setEmailError(t('contact.errors.invalidEmail'));
+      setEmailError(t('contact.form.errors.invalidEmail'));
       hasError = true;
     } else {
       setEmailError('');
     }
 
     if (!message.trim()) {
-      setMessageError(t('contact.errors.required'));
+      setMessageError(t('contact.form.errors.required'));
       hasError = true;
     } else {
       setMessageError('');
@@ -85,41 +85,41 @@ export function Form() {
       onReset={handleReset}
     >
       <Input
-        label={t('contact.name')}
+        label={t('contact.form.name')}
         id="name"
         name="fullName"
-        placeholder={t('contact.name')}
+        placeholder={t('contact.form.name')}
         required
         invalid={!!nameError}
         errorMessage={nameError}
       />
       <Input
-        label={t('contact.epost')}
+        label={t('contact.form.epost')}
         id="epost"
         name="epost"
         type="email"
-        placeholder={t('contact.epost')}
+        placeholder={t('contact.form.epost')}
         required
         invalid={!!emailError}
         errorMessage={emailError}
       />
       <Textarea
-        label={t('contact.message')}
+        label={t('contact.form.message')}
         id="message"
         name="message"
-        placeholder={t('contact.message')}
+        placeholder={t('contact.form.message')}
         required
         invalid={!!messageError}
         errorMessage={messageError}
       />
       {submitted && (
         <p role="status" className={`text-body-sm ${styles.success}`}>
-          {t('contact.success')}
+          {t('contact.form.success')}
         </p>
       )}
       <div className={styles.buttons}>
         <Button fullWidth type="submit" iconLeft={<Send />}>
-          {t('contact.requestQuote')}
+          {t('contact.form.requestQuote')}
         </Button>
         <Button
           fullWidth
@@ -127,7 +127,7 @@ export function Form() {
           iconLeft={<Trash color="var(--color-action-primary)" />}
           variant="secondary"
         >
-          {t('contact.clearForm')}
+          {t('contact.form.clearForm')}
         </Button>
       </div>
     </form>

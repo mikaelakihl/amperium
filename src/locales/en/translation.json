@@ -98,27 +98,31 @@
     "heading": "$t(common.contactUs)",
     "description": "<highlight>Fill in the form below and we'll get back to you with a free quote</highlight> — feel free to describe what you need help with so we can prepare.",
     "imageUnavailable": "No image available",
-    "name": "Name",
-    "epost": "E-mail",
-    "message": "Message",
-    "requestQuote": "Request quote",
-    "clearForm": "Clear form",
-    "success": "Thanks! We'll be in touch shortly.",
-    "errors": {
-      "required": "This field is required",
-      "invalidEmail": "Enter a valid email address"
-    },
     "contactDetails": "Contact details",
-    "openingHours": "Opening hours",
-    "monday": "Monday",
-    "tuesday": "Tuesday",
-    "wednesday": "Wednesday",
-    "thursday": "Thursday",
-    "friday": "Friday",
-    "saturday": "Saturday",
-    "sunday": "Sunday",
-    "today": "Today",
-    "closed": "Closed"
+    "form": {
+      "name": "Name",
+      "epost": "E-mail",
+      "message": "Message",
+      "requestQuote": "Request quote",
+      "clearForm": "Clear form",
+      "success": "Thanks! We'll be in touch shortly.",
+      "errors": {
+        "required": "This field is required",
+        "invalidEmail": "Enter a valid email address"
+      }
+    },
+    "hours": {
+      "label": "Opening hours",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "today": "Today",
+      "closed": "Closed"
+    }
   },
   "loading": "Loading...",
   "footer": {

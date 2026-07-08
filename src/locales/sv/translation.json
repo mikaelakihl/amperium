@@ -94,27 +94,31 @@
     "heading": "$t(common.contactUs)",
     "description": "<highlight>Fyll i formuläret nedan så återkommer vi med en kostnadsfri offert</highlight> — beskriv gärna vad du behöver hjälp med så kan vi förbereda oss.",
     "imageUnavailable": "Ingen bild kunde visas",
-    "name": "Namn",
-    "epost": "E-post",
-    "message": "Meddelande",
-    "requestQuote": "Begär en offert",
-    "clearForm": "Rensa formulär",
-    "success": "Tack! Vi hör av oss inom kort.",
-    "errors": {
-      "required": "Fältet är obligatoriskt",
-      "invalidEmail": "Ange en giltig e-postadress"
-    },
     "contactDetails": "Kontaktuppgifter",
-    "openingHours": "Öppettider",
-    "monday": "Måndag",
-    "tuesday": "Tisdag",
-    "wednesday": "Onsdag",
-    "thursday": "Torsdag",
-    "friday": "Fredag",
-    "saturday": "Lördag",
-    "sunday": "Söndag",
-    "today": "Idag",
-    "closed": "Stängt"
+    "form": {
+      "name": "Namn",
+      "epost": "E-post",
+      "message": "Meddelande",
+      "requestQuote": "Begär en offert",
+      "clearForm": "Rensa formulär",
+      "success": "Tack! Vi hör av oss inom kort.",
+      "errors": {
+        "required": "Fältet är obligatoriskt",
+        "invalidEmail": "Ange en giltig e-postadress"
+      }
+    },
+    "hours": {
+      "label": "Öppettider",
+      "monday": "Måndag",
+      "tuesday": "Tisdag",
+      "wednesday": "Onsdag",
+      "thursday": "Torsdag",
+      "friday": "Fredag",
+      "saturday": "Lördag",
+      "sunday": "Söndag",
+      "today": "Idag",
+      "closed": "Stängt"
+    }
   },
   "loading": "Laddar...",
   "footer": {
