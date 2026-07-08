@@ -18,7 +18,7 @@ export function ContactCard({ name, image, phone, email }: ContactCardProps) {
 
   return (
     <div className={styles.contactCard}>
-      <h3 className={`text-heading-sm ${styles.contactName}`}>{name}</h3>
+      <h2 className={`text-heading-sm ${styles.contactName}`}>{name}</h2>
       <div className={styles.imgContainer}>
         <img
           src={!image || imageFailed ? placeholder : image}

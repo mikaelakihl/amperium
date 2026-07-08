@@ -9,7 +9,7 @@ interface TitledCardProps {
 export function TitledCard({ children, label }: TitledCardProps) {
   return (
     <div className={styles.titledCard}>
-      <h3 className={`${styles.label} text-label-sm`}>{label}</h3>
+      <h2 className={`${styles.label} text-label-sm`}>{label}</h2>
       <div>{children}</div>
     </div>
   );

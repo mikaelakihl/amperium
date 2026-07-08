@@ -11,6 +11,7 @@ interface ServicePreviewProps {
 
 export function ServicePreview({ showIntro = true }: ServicePreviewProps) {
   const { t } = useTranslation();
+  const cardHeadingLevel = showIntro ? 'h3' : 'h2';
   return (
     <section className={styles.servicePreview}>
       {showIntro && (
@@ -26,18 +27,21 @@ export function ServicePreview({ showIntro = true }: ServicePreviewProps) {
             description={t('home.serviceCard.service.description')}
             icon={<Wrench />}
             linkTo={serviceDetailPath('service')}
+            headingLevel={cardHeadingLevel}
           />
           <ServiceCard
             title={t('home.serviceCard.electrical.title')}
             description={t('home.serviceCard.electrical.description')}
             icon={<Zap />}
             linkTo={serviceDetailPath('electrical')}
+            headingLevel={cardHeadingLevel}
           />
           <ServiceCard
             title={t('home.serviceCard.project.title')}
             description={t('home.serviceCard.project.description')}
             icon={<ClipboardList />}
             linkTo={serviceDetailPath('project')}
+            headingLevel={cardHeadingLevel}
           />
         </div>
       </div>
