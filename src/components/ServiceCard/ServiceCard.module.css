@@ -15,6 +15,13 @@
   width: 100%;
 }
 
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
 .contentContainer {
   display: flex;
   flex-direction: column;
@@ -26,11 +33,4 @@
 .contentContainer h3,
 .contentContainer p {
   margin: 0;
-}
-
-.topContainer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-  align-items: flex-start;
 }

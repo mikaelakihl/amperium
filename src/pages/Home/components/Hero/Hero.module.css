@@ -20,13 +20,14 @@ h1 {
   padding: 0;
 }
 
-.heroText {
+.wrapper {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-md);
 }
 
-.badgeContainer {
+.heroText {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -45,21 +46,20 @@ h1 {
   color: var(--color-text-secondary);
 }
 
-.wrapper {
+.buttonsDesktop {
+  display: none;
+}
+
+.badgeContainer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: var(--space-md);
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
-}
-
-.buttonsDesktop {
-  display: none;
 }
 
 @media (--md) {
@@ -74,16 +74,16 @@ h1 {
     align-items: flex-end;
   }
 
+  .buttonsDesktop {
+    display: flex;
+    gap: var(--space-md);
+  }
+
   .badgeContainer {
     display: none;
   }
 
   .buttons {
     display: none;
-  }
-
-  .buttonsDesktop {
-    display: flex;
-    gap: var(--space-md);
   }
 }

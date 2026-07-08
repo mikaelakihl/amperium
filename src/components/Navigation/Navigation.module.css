@@ -4,10 +4,6 @@
   gap: var(--space-sm);
 }
 
-.mobileNav {
-  display: flex;
-}
-
 .desktopNav {
   display: none;
 }
@@ -16,16 +12,20 @@
   display: none;
 }
 
-@media (--md) {
-  .mobileNav {
-    display: none;
-  }
+.mobileNav {
+  display: flex;
+}
 
+@media (--md) {
   .desktopNav {
     display: flex;
   }
 
   .actionButton {
     display: block;
+  }
+
+  .mobileNav {
+    display: none;
   }
 }

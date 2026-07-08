@@ -1,10 +1,8 @@
-.pills {
+.serviceDetail {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2xl);
 }
 
 .backLink {
@@ -17,11 +15,13 @@
   gap: var(--space-md);
 }
 
-.serviceDetail {
+.pills {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-2xl);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .separator {
@@ -29,15 +29,15 @@
   border-top: 0.5px solid var(--color-border-subtle);
 }
 
-.ctaHeading {
-  margin: 0;
-}
-
 .cta {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: var(--space-md);
+}
+
+.ctaHeading {
+  margin: 0;
 }
 
 .contactBtn {
@@ -48,9 +48,6 @@
   .serviceDetail {
     gap: var(--space-3xl);
   }
-  .contactBtn {
-    width: auto;
-  }
 
   .content {
     gap: var(--space-xl);
@@ -60,5 +57,9 @@
     flex-direction: row;
     align-items: center;
     gap: var(--space-2xl);
+  }
+
+  .contactBtn {
+    width: auto;
   }
 }

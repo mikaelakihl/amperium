@@ -1,3 +1,11 @@
+.benefitItem {
+  display: flex;
+  align-items: center;
+  padding: var(--space-sm);
+  max-width: 400px;
+  gap: var(--space-xs);
+}
+
 .contentContainer {
   display: flex;
   flex-direction: column;
@@ -7,14 +15,6 @@
 .contentContainer p {
   margin: 0;
   padding: 0;
-}
-
-.benefitItem {
-  display: flex;
-  align-items: center;
-  padding: var(--space-sm);
-  max-width: 400px;
-  gap: var(--space-xs);
 }
 
 .description {

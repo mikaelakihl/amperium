@@ -47,29 +47,44 @@
   aspect-ratio: 1;
 }
 
-.iconLeft,
-.iconRight,
-.icon {
-  display: inline-flex;
-  align-items: center;
-}
-
 .primary {
   background-color: var(--color-action-primary);
   color: var(--color-text-inverse);
 }
+
+.button.primary:hover:not(:disabled) {
+  background-color: var(--color-action-primary-hover);
+  color: var(--color-text-inverse);
+}
+
 .secondary {
   background-color: var(--color-neutral-1000);
   color: var(--color-text-primary);
   border: solid 1px var(--color-action-primary);
 }
+
+.button.secondary:hover:not(:disabled) {
+  background-color: var(--color-action-primary);
+  color: var(--color-text-inverse);
+}
+
 .tertiary {
   background-color: var(--color-red-700);
   color: var(--color-red-200);
 }
+
+.button.tertiary:hover:not(:disabled) {
+  background-color: var(--color-red-800);
+  color: var(--color-green-100);
+}
+
 .ghost {
   background-color: transparent;
   color: var(--color-green-1000);
+}
+
+.button.ghost:hover:not(:disabled) {
+  background-color: var(--color-green-100);
 }
 
 .link {
@@ -82,34 +97,22 @@
   gap: var(--space-sm);
 }
 
-.button.ghost:hover:not(:disabled) {
-  background-color: var(--color-green-100);
-}
-
 .button.link:hover:not(:disabled) {
   color: var(--color-action-primary);
   text-decoration: underline;
 }
 
-.button.primary:hover:not(:disabled) {
-  background-color: var(--color-action-primary-hover);
-  color: var(--color-text-inverse);
+.iconLeft,
+.iconRight,
+.icon {
+  display: inline-flex;
+  align-items: center;
 }
 
 .button.secondary .icon {
   color: var(--color-action-primary);
 }
 
-.button.secondary:hover:not(:disabled) {
-  background-color: var(--color-action-primary);
-  color: var(--color-text-inverse);
-}
-
 .button.secondary:hover:not(:disabled) .icon {
   color: var(--color-text-inverse);
-}
-
-.button.tertiary:hover:not(:disabled) {
-  background-color: var(--color-red-800);
-  color: var(--color-green-100);
 }
