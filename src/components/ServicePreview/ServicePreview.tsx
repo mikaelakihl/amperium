@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { SectionIntro } from '../SectionIntro/SectionIntro';
+import { SectionIntro } from '../ui/SectionIntro/SectionIntro';
 import { ServiceCard } from '../ServiceCard/ServiceCard';
 import { ClipboardList, Wrench, Zap } from 'lucide-react';
 import { serviceDetailPath } from '../../routes/services';

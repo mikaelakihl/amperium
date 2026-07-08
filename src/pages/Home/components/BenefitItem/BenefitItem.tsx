@@ -1,4 +1,4 @@
-import { IconIndicator } from '../IconIndicator/IconIndicator';
+import { IconIndicator } from '../../../../components/ui/IconIndicator/IconIndicator';
 import styles from './BenefitItem.module.css';
 
 interface BenefitItemProps {

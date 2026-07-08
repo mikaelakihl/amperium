@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router';
-import { IconIndicator } from '../IconIndicator/IconIndicator';
+import { IconIndicator } from '../ui/IconIndicator/IconIndicator';
 import styles from './ServiceCard.module.css';
 
 interface ServiceCardProps {

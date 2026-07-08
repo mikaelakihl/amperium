@@ -1,8 +1,8 @@
 import { Trans, useTranslation } from 'react-i18next';
-import { Badge } from '../Badge/Badge';
+import { Badge } from '../../../../components/ui/Badge/Badge';
 import styles from './Hero.module.css';
-import { ButtonLink } from '../ButtonLink/ButtonLink';
-import { servicesPath } from '../../routes/services';
+import { ButtonLink } from '../../../../components/ui/ButtonLink/ButtonLink';
+import { servicesPath } from '../../../../routes/services';
 
 export function Hero() {
   const { t } = useTranslation();

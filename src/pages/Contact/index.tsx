@@ -1,9 +1,9 @@
-import { Form } from '../../components/Form/Form';
-import { ContactDetails } from '../../components/ContactDetails/ContactDetails';
-import { OpeningHours } from '../../components/OpeningHours/OpeningHours';
+import { Form } from './components/Form/Form';
+import { ContactDetails } from './components/ContactDetails/ContactDetails';
+import { OpeningHours } from './components/OpeningHours/OpeningHours';
 import styles from './index.module.css';
-import { PageIntro } from '../../components/PageIntro/PageIntro';
-import pageIntroStyles from '../../components/PageIntro/PageIntro.module.css';
+import { PageIntro } from '../../components/ui/PageIntro/PageIntro';
+import pageIntroStyles from '../../components/ui/PageIntro/PageIntro.module.css';
 import { Trans, useTranslation } from 'react-i18next';
 import { usePageTitle } from '../../hooks/usePageTitle';
 

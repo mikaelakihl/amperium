@@ -1,5 +1,5 @@
-import { TitledCard } from '../TitledCard/TitledCard';
-import { Pill } from '../Pill/Pill';
+import { TitledCard } from '../../../../components/ui/TitledCard/TitledCard';
+import { Pill } from '../../../../components/ui/Pill/Pill';
 import { openingHours, getTodayIndex } from './hours';
 import styles from './OpeningHours.module.css';
 import { useTranslation } from 'react-i18next';

@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { Hero } from '../../components/Hero/Hero';
-import { Banner } from '../../components/Banner/Banner';
-import { AboutPreview } from '../../components/AboutPreview/AboutPreview';
+import { Hero } from './components/Hero/Hero';
+import { Banner } from './components/Banner/Banner';
+import { AboutPreview } from './components/AboutPreview/AboutPreview';
 import { ServicePreview } from '../../components/ServicePreview/ServicePreview';
-import { BenefitBanner } from '../../components/BenefitBanner/BenefitBanner';
+import { BenefitBanner } from './components/BenefitBanner/BenefitBanner';
 import { usePageTitle } from '../../hooks/usePageTitle';
 import styles from './index.module.css';
 

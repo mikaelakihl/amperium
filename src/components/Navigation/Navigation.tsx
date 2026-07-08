@@ -1,7 +1,7 @@
 import { NavMobile } from './NavMobile/NavMobile';
 import { NavDesktop } from './NavDesktop/NavDesktop';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
-import { ButtonLink } from '../ButtonLink/ButtonLink';
+import { ButtonLink } from '../ui/ButtonLink/ButtonLink';
 import { PhoneOutgoing } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import styles from './Navigation.module.css';

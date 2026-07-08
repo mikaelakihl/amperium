@@ -1,7 +1,7 @@
 import { ContactCard } from '../ContactCard/ContactCard';
-import simon from '../../assets/contacts/simon.png';
-import jimmy from '../../assets/contacts/jimmy.png';
-import wille from '../../assets/contacts/wille.jpg';
+import simon from '../../../../assets/contacts/simon.png';
+import jimmy from '../../../../assets/contacts/jimmy.png';
+import wille from '../../../../assets/contacts/wille.jpg';
 import styles from './ContactCardList.module.css';
 
 export function ContactCardList() {

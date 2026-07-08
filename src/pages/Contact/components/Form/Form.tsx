@@ -1,8 +1,8 @@
 import { useState, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Input } from '../Input/Input';
-import { Textarea } from '../Textarea/Textarea';
-import { Button } from '../Button/Button';
+import { Input } from '../../../../components/ui/Input/Input';
+import { Textarea } from '../../../../components/ui/Textarea/Textarea';
+import { Button } from '../../../../components/ui/Button/Button';
 import { Send, Trash } from 'lucide-react';
 import styles from './Form.module.css';
 

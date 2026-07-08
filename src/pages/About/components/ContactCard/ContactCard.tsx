@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Mail, Phone } from 'lucide-react';
-import placeholder from '../../assets/contacts/placeholder.jpg';
-import { ButtonLink } from '../ButtonLink/ButtonLink';
+import placeholder from '../../../../assets/contacts/placeholder.jpg';
+import { ButtonLink } from '../../../../components/ui/ButtonLink/ButtonLink';
 import styles from './ContactCard.module.css';
 import { useTranslation } from 'react-i18next';
 

@@ -1,6 +1,6 @@
 import { Camera, Mail, Phone } from 'lucide-react';
-import { TitledCard } from '../TitledCard/TitledCard';
-import { ButtonLink } from '../ButtonLink/ButtonLink';
+import { TitledCard } from '../../../../components/ui/TitledCard/TitledCard';
+import { ButtonLink } from '../../../../components/ui/ButtonLink/ButtonLink';
 import styles from './ContactDetails.module.css';
 import { useTranslation } from 'react-i18next';
 

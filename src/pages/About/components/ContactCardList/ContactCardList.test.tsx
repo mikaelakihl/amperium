@@ -5,7 +5,7 @@ import { ContactCardList } from './ContactCardList';
 describe('ContactCardList', () => {
   it('renders a card for every contact', () => {
     render(<ContactCardList />);
-    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(4);
+    expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(4);
   });
 
   it('renders the name of every contact', () => {

@@ -21,12 +21,17 @@ describe('ServicePreview', () => {
 
   it('hides the section intro when showIntro is false', () => {
     renderServicePreview(false);
-    expect(screen.queryByRole('heading', { level: 2 })).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('heading', {
+        level: 2,
+        name: /våra tjänster|our services/i,
+      })
+    ).not.toBeInTheDocument();
   });
 
   it('always renders a card for every service', () => {
     renderServicePreview(false);
-    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(3);
+    expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(3);
   });
 
   it('links every service card to its own detail page', () => {

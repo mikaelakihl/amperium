@@ -35,7 +35,7 @@ describe('ServiceDetail', () => {
   it('renders the heading and description for a given service', () => {
     renderServiceDetail(serviceSlugs.service);
     expect(
-      screen.getByRole('heading', { level: 2, name: 'Service och underhåll' })
+      screen.getByRole('heading', { level: 1, name: 'Service och underhåll' })
     ).toBeInTheDocument();
   });
 

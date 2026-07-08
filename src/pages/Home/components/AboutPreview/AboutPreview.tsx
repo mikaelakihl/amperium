@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { SectionIntro } from '../SectionIntro/SectionIntro';
+import { SectionIntro } from '../../../../components/ui/SectionIntro/SectionIntro';
 import { StatisticCard } from '../StatisticCard/StatisticCard';
 import styles from './AboutPreview.module.css';
 
