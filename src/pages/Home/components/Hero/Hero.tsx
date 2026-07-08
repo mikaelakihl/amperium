@@ -44,10 +44,10 @@ export function Hero() {
       </div>
 
       <div className={styles.buttons}>
-        <ButtonLink to="/kontakt" size="xs" fullWidth>
+        <ButtonLink to="/kontakt" size="sm" fullWidth>
           {t('home.hero.buttons.contactUs')}
         </ButtonLink>
-        <ButtonLink to={servicesPath} size="xs" variant="secondary" fullWidth>
+        <ButtonLink to={servicesPath} size="sm" variant="secondary" fullWidth>
           {t('home.hero.buttons.ourServices')}
         </ButtonLink>
       </div>
