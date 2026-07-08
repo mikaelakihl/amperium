@@ -3,6 +3,12 @@ import { TitledCard } from '../../../../components/ui/TitledCard/TitledCard';
 import { ButtonLink } from '../../../../components/ui/ButtonLink/ButtonLink';
 import styles from './ContactDetails.module.css';
 import { useTranslation } from 'react-i18next';
+import {
+  PHONE_DISPLAY,
+  PHONE_HREF,
+  EMAIL,
+  EMAIL_HREF,
+} from '../../../../constants/contact';
 
 export function ContactDetails() {
   const { t } = useTranslation();
@@ -10,20 +16,20 @@ export function ContactDetails() {
     <TitledCard label={t('contact.contactDetails')}>
       <div className={styles.contactInfo}>
         <ButtonLink
-          href="tel:+46854524"
+          href={PHONE_HREF}
           variant="link"
           className="text-body-sm"
           iconLeft={<Phone aria-hidden="true" size={16} />}
         >
-          08-854 524
+          {PHONE_DISPLAY}
         </ButtonLink>
         <ButtonLink
-          href="mailto:info@amperium.se"
+          href={EMAIL_HREF}
           variant="link"
           className="text-body-sm"
           iconLeft={<Mail aria-hidden="true" size={16} />}
         >
-          info@amperium.se
+          {EMAIL}
         </ButtonLink>
         <ButtonLink
           href="https://www.instagram.com/amperium_elektriska/"

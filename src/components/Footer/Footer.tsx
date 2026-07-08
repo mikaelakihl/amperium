@@ -4,6 +4,12 @@ import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Camera, Copyright } from 'lucide-react';
 import { serviceDetailPath } from '../../routes/services';
+import {
+  PHONE_DISPLAY,
+  PHONE_HREF,
+  EMAIL,
+  EMAIL_HREF,
+} from '../../constants/contact';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -61,10 +67,10 @@ export function Footer() {
             </h2>
             <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
-                <a href="tel:+46854524">08-854 524</a>
+                <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>
               </li>
               <li>
-                <a href="mailto:info@amperium.se">info@amperium.se</a>
+                <a href={EMAIL_HREF}>{EMAIL}</a>
               </li>
               <li>
                 <address>Klostervägen 3, Gustavsberg</address>
