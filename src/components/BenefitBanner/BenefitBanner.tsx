@@ -9,18 +9,18 @@ export function BenefitBanner() {
     <div className={styles.benefitBanner}>
       <BenefitItem
         icon={<ShieldCheck />}
-        title={t('home.benefitBannerCertifiedTitle')}
-        description={t('home.benefitBannerCertifiedDescription')}
+        title={t('home.benefitBanner.certified.title')}
+        description={t('home.benefitBanner.certified.description')}
       />
       <BenefitItem
         icon={<Clock />}
-        title={t('home.benefitBannerResponseTitle')}
-        description={t('home.benefitBannerResponseDescription')}
+        title={t('home.benefitBanner.response.title')}
+        description={t('home.benefitBanner.response.description')}
       />
       <BenefitItem
         icon={<Star />}
-        title={t('home.benefitBannerCreditTitle')}
-        description={t('home.benefitBannerCreditDescription')}
+        title={t('home.benefitBanner.credit.title')}
+        description={t('home.benefitBanner.credit.description')}
       />
     </div>
   );

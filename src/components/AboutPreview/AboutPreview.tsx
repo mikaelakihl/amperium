@@ -9,17 +9,20 @@ export function AboutPreview() {
     <section className={styles.aboutPreview}>
       <div>
         <SectionIntro
-          label={t('home.aboutPreviewLabel')}
-          heading={t('home.aboutPreviewHeading')}
-          description={t('home.aboutPreviewDescription')}
+          label={t('home.aboutPreview.label')}
+          heading={t('home.aboutPreview.heading')}
+          description={t('home.aboutPreview.description')}
         />
       </div>
       <div className={styles.cards}>
-        <StatisticCard title="40+" description={t('home.statisticYears')} />
-        <StatisticCard title="500+" description={t('home.statisticProjects')} />
+        <StatisticCard title="40+" description={t('home.statistic.years')} />
+        <StatisticCard
+          title="500+"
+          description={t('home.statistic.projects')}
+        />
         <StatisticCard
           title="100%"
-          description={t('home.statisticCertified')}
+          description={t('home.statistic.certified')}
         />
       </div>
     </section>

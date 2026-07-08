@@ -20,26 +20,48 @@
   },
   "home": {
     "title": "Home",
-    "aboutPreviewLabel": "$t(common.about)",
-    "aboutPreviewHeading": "The company that puts quality first",
-    "aboutPreviewDescription": "We offer services in maintenance, electrical installation, and project management consulting. Built on responsiveness and strong leadership, we deliver results you can rely on.",
-    "statisticYears": "Years in business",
-    "statisticProjects": "Completed projects",
-    "statisticCertified": "Certified electricians",
-    "servicesPreviewLabel": "What we do",
-    "servicesPreviewHeading": "$t(common.ourServices)",
-    "serviceCardServiceTitle": "$t(common.service)",
-    "serviceCardServiceDescription": "Fast and reliable help when something goes wrong - around the clock",
-    "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
-    "serviceCardElectricalDescription": "New installation, renovation, and upgrading of electrical systems",
-    "serviceCardProjectTitle": "$t(common.projectManagement)",
-    "serviceCardProjectDescription": "Consultation and planning from idea to finished project",
-    "benefitBannerCertifiedTitle": "Certified",
-    "benefitBannerCertifiedDescription": "All our electricians are certified",
-    "benefitBannerResponseTitle": "Fast response",
-    "benefitBannerResponseDescription": "We get back to you within 24h",
-    "benefitBannerCreditTitle": "Good creditworthiness",
-    "benefitBannerCreditDescription": "UC-approved since 2024"
+    "aboutPreview": {
+      "label": "$t(common.about)",
+      "heading": "The company that puts quality first",
+      "description": "We offer services in maintenance, electrical installation, and project management consulting. Built on responsiveness and strong leadership, we deliver results you can rely on."
+    },
+    "statistic": {
+      "years": "Years in business",
+      "projects": "Completed projects",
+      "certified": "Certified electricians"
+    },
+    "servicesPreview": {
+      "label": "What we do",
+      "heading": "$t(common.ourServices)"
+    },
+    "serviceCard": {
+      "service": {
+        "title": "$t(common.service)",
+        "description": "Fast and reliable help when something goes wrong - around the clock"
+      },
+      "electrical": {
+        "title": "$t(common.electricalInstallation)",
+        "description": "New installation, renovation, and upgrading of electrical systems"
+      },
+      "project": {
+        "title": "$t(common.projectManagement)",
+        "description": "Consultation and planning from idea to finished project"
+      }
+    },
+    "benefitBanner": {
+      "certified": {
+        "title": "Certified",
+        "description": "All our electricians are certified"
+      },
+      "response": {
+        "title": "Fast response",
+        "description": "We get back to you within 24h"
+      },
+      "credit": {
+        "title": "Good creditworthiness",
+        "description": "UC-approved since 2024"
+      }
+    }
   },
   "about": {
     "title": "$t(common.about)",

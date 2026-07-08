@@ -15,27 +15,27 @@ export function ServicePreview({ showIntro = true }: ServicePreviewProps) {
     <section className={styles.servicePreview}>
       {showIntro && (
         <SectionIntro
-          label={t('home.servicesPreviewLabel')}
-          heading={t('home.servicesPreviewHeading')}
+          label={t('home.servicesPreview.label')}
+          heading={t('home.servicesPreview.heading')}
         />
       )}
       <div className={styles.cards}>
         <div className={styles.cardContainer}>
           <ServiceCard
-            title={t('home.serviceCardServiceTitle')}
-            description={t('home.serviceCardServiceDescription')}
+            title={t('home.serviceCard.service.title')}
+            description={t('home.serviceCard.service.description')}
             icon={<Wrench />}
             linkTo={serviceDetailPath('service')}
           />
           <ServiceCard
-            title={t('home.serviceCardElectricalTitle')}
-            description={t('home.serviceCardElectricalDescription')}
+            title={t('home.serviceCard.electrical.title')}
+            description={t('home.serviceCard.electrical.description')}
             icon={<Zap />}
             linkTo={serviceDetailPath('electrical')}
           />
           <ServiceCard
-            title={t('home.serviceCardProjectTitle')}
-            description={t('home.serviceCardProjectDescription')}
+            title={t('home.serviceCard.project.title')}
+            description={t('home.serviceCard.project.description')}
             icon={<ClipboardList />}
             linkTo={serviceDetailPath('project')}
           />

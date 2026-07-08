@@ -20,26 +20,48 @@
   },
   "home": {
     "title": "Hem",
-    "aboutPreviewLabel": "$t(common.about)",
-    "aboutPreviewHeading": "Det varma företaget där kvalité är ledordet",
-    "aboutPreviewDescription": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på",
-    "statisticYears": "År i branschen",
-    "statisticProjects": "Genomförda projekt",
-    "statisticCertified": "Certifierade elektriker",
-    "servicesPreviewLabel": "Vad vi gör",
-    "servicesPreviewHeading": "$t(common.ourServices)",
-    "serviceCardServiceTitle": "$t(common.service)",
-    "serviceCardServiceDescription": "Snabb och pålitlig hjälp när något strular - dygnet runt",
-    "serviceCardElectricalTitle": "$t(common.electricalInstallation)",
-    "serviceCardElectricalDescription": "Nyinstallation, ombyggnad och uppgradering av elsystem",
-    "serviceCardProjectTitle": "$t(common.projectManagement)",
-    "serviceCardProjectDescription": "Konsultation och planering från idé till färdigt projekt",
-    "benefitBannerCertifiedTitle": "Certifierade",
-    "benefitBannerCertifiedDescription": "Alla våra elektriker är certifierade",
-    "benefitBannerResponseTitle": "Snabb respons",
-    "benefitBannerResponseDescription": "Vi återkommer inom 24h",
-    "benefitBannerCreditTitle": "God kreditvärdighet",
-    "benefitBannerCreditDescription": "UC-godkända sedan 2024"
+    "aboutPreview": {
+      "label": "$t(common.about)",
+      "heading": "Det varma företaget där kvalité är ledordet",
+      "description": "Vi erbjuder tjänster inom service, elinstallation och konsultning inom projektledning. Med lyhördhet och ledarskap som grund levererar vi resultatet du kan lita på"
+    },
+    "statistic": {
+      "years": "År i branschen",
+      "projects": "Genomförda projekt",
+      "certified": "Certifierade elektriker"
+    },
+    "servicesPreview": {
+      "label": "Vad vi gör",
+      "heading": "$t(common.ourServices)"
+    },
+    "serviceCard": {
+      "service": {
+        "title": "$t(common.service)",
+        "description": "Snabb och pålitlig hjälp när något strular - dygnet runt"
+      },
+      "electrical": {
+        "title": "$t(common.electricalInstallation)",
+        "description": "Nyinstallation, ombyggnad och uppgradering av elsystem"
+      },
+      "project": {
+        "title": "$t(common.projectManagement)",
+        "description": "Konsultation och planering från idé till färdigt projekt"
+      }
+    },
+    "benefitBanner": {
+      "certified": {
+        "title": "Certifierade",
+        "description": "Alla våra elektriker är certifierade"
+      },
+      "response": {
+        "title": "Snabb respons",
+        "description": "Vi återkommer inom 24h"
+      },
+      "credit": {
+        "title": "God kreditvärdighet",
+        "description": "UC-godkända sedan 2024"
+      }
+    }
   },
   "about": {
     "title": "$t(common.about)",
