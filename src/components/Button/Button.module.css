@@ -87,7 +87,7 @@
 }
 
 .button.link:hover:not(:disabled) {
-  color: var(--color-action-primary-hover);
+  color: var(--color-action-primary);
   text-decoration: underline;
 }
 

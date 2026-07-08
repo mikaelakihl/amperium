@@ -24,10 +24,6 @@
   color: var(--color-action-secondary);
 }
 
-.contactInfo a:hover {
-  color: var(--color-action-primary);
-}
-
 .contactInfo a svg {
   color: var(--color-action-primary);
 }
