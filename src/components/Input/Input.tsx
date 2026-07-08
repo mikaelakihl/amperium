@@ -58,7 +58,7 @@ export function Input({
         />
       </div>
       {invalid && errorMessage && (
-        <p id={`${id}-error`} className={styles.errorMessage}>
+        <p id={`${id}-error`} className={styles.errorMessage} role="alert">
           {errorMessage}
         </p>
       )}

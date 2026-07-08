@@ -41,7 +41,7 @@ export function Textarea({
         {...props}
       />
       {invalid && errorMessage && (
-        <p id={`${id}-error`} className={styles.errorMessage}>
+        <p id={`${id}-error`} className={styles.errorMessage} role="alert">
           {errorMessage}
         </p>
       )}
