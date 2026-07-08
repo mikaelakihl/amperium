@@ -21,7 +21,7 @@ export function Textarea({
   ...props
 }: TextareaProps) {
   return (
-    <div className={styles.textareaContainer}>
+    <div className={styles.textareaWrapper}>
       {label && (
         <label htmlFor={id} className="text-label-sm">
           {label}
