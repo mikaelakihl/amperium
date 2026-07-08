@@ -8,7 +8,7 @@ export function Badge() {
       <div className={styles.temp}>
         <p>Temporary</p>
       </div>
-      <p>{t('hero.credit')}</p>
+      <p>{t('home.hero.credit')}</p>
     </div>
   );
 }

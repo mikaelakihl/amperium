@@ -11,11 +11,11 @@ export function Hero() {
       <div className={styles.wrapper}>
         <div className={styles.heroText}>
           <p className={`${styles.label} text-label-sm`}>
-            {t('hero.electricalInstallation&service')}
+            {t('home.hero.electricalInstallationAndService')}
           </p>
           <h1 className={`text-heading-md ${styles.slogan}`}>
             <Trans
-              i18nKey="hero.slogan"
+              i18nKey="home.hero.slogan"
               components={{
                 highlight: <span className={styles.highlight} />,
                 br: <br />,
@@ -24,7 +24,7 @@ export function Hero() {
           </h1>
           <div className={styles.buttonsDesktop}>
             <ButtonLink to="/kontakt" size="xs" fullWidth>
-              {t('hero.contactUs')}
+              {t('home.hero.contactUs')}
             </ButtonLink>
             <ButtonLink
               to={servicesPath}
@@ -32,7 +32,7 @@ export function Hero() {
               variant="secondary"
               fullWidth
             >
-              {t('hero.ourServices')}
+              {t('home.hero.ourServices')}
             </ButtonLink>
           </div>
         </div>
@@ -45,10 +45,10 @@ export function Hero() {
 
       <div className={styles.buttons}>
         <ButtonLink to="/kontakt" size="xs" fullWidth>
-          {t('hero.contactUs')}
+          {t('home.hero.contactUs')}
         </ButtonLink>
         <ButtonLink to={servicesPath} size="xs" variant="secondary" fullWidth>
-          {t('hero.ourServices')}
+          {t('home.hero.ourServices')}
         </ButtonLink>
       </div>
     </section>

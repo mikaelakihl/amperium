@@ -53,7 +53,7 @@ export function ServiceDetail() {
             {t('services.detail.ctaHeading')}
           </h2>
           <ButtonLink className={styles.contactBtn} to="/kontakt">
-            {t('hero.contactUs')}
+            {t('common.contactUs')}
           </ButtonLink>
         </div>
       </div>

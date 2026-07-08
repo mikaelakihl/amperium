@@ -6,9 +6,13 @@ export function Banner() {
   return (
     <div className={styles.banner}>
       <ul className={`${styles.list}`} role="list">
-        <li className="text-body-md">{t('banner.service')}</li>
-        <li className="text-body-md">{t('banner.electricalInstallation')}</li>
-        <li className="text-body-md">{t('banner.projectManagement')}</li>
+        <li className="text-body-md">{t('home.banner.service')}</li>
+        <li className="text-body-md">
+          {t('home.banner.electricalInstallation')}
+        </li>
+        <li className="text-body-md">
+          {t('home.banner.projectManagement')}
+        </li>
       </ul>
     </div>
   );

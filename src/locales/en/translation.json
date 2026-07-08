@@ -19,6 +19,18 @@
     "skipToContent": "Skip to content"
   },
   "home": {
+    "hero": {
+      "credit": "Credit rating",
+      "slogan": "We make <br/> electricity <highlight>work</highlight>",
+      "electricalInstallationAndService": "Electricalinstallation & Service",
+      "contactUs": "$t(common.contactUs)",
+      "ourServices": "$t(common.ourServices)"
+    },
+    "banner": {
+      "electricalInstallation": "$t(common.electricalInstallation)",
+      "projectManagement": "$t(common.projectManagement)",
+      "service": "$t(common.service)"
+    },
     "aboutPreview": {
       "label": "$t(common.about)",
       "heading": "The company that puts quality first",
@@ -135,19 +147,5 @@
     },
     "theCompany": "The company",
     "allRightsReserved": "All rights reserved"
-  },
-
-  "hero": {
-    "credit": "Credit rating",
-    "slogan": "We make <br/> electricity <highlight>work</highlight>",
-    "electricalInstallation&service": "Electricalinstallation & Service",
-    "contactUs": "$t(common.contactUs)",
-    "ourServices": "$t(common.ourServices)"
-  },
-
-  "banner": {
-    "electricalInstallation": "$t(common.electricalInstallation)",
-    "projectManagement": "$t(common.projectManagement)",
-    "service": "$t(common.service)"
   }
 }

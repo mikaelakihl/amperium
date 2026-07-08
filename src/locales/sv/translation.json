@@ -19,6 +19,18 @@
     "skipToContent": "Hoppa till innehåll"
   },
   "home": {
+    "hero": {
+      "credit": "Kreditvärdighet",
+      "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
+      "electricalInstallationAndService": "Elinstallation & service",
+      "contactUs": "$t(common.contactUs)",
+      "ourServices": "$t(common.ourServices)"
+    },
+    "banner": {
+      "electricalInstallation": "$t(common.electricalInstallation)",
+      "projectManagement": "$t(common.projectManagement)",
+      "service": "$t(common.service)"
+    },
     "aboutPreview": {
       "label": "$t(common.about)",
       "heading": "Det varma företaget där kvalité är ledordet",
@@ -131,19 +143,5 @@
     },
     "theCompany": "Företaget",
     "allRightsReserved": "Alla rättigheter förbehållna"
-  },
-
-  "hero": {
-    "credit": "Kreditvärdighet",
-    "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
-    "electricalInstallation&service": "Elinstallation & service",
-    "contactUs": "$t(common.contactUs)",
-    "ourServices": "$t(common.ourServices)"
-  },
-
-  "banner": {
-    "electricalInstallation": "$t(common.electricalInstallation)",
-    "projectManagement": "$t(common.projectManagement)",
-    "service": "$t(common.service)"
   }
 }
