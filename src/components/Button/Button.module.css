@@ -92,12 +92,21 @@
 }
 
 .button.primary:hover:not(:disabled) {
-  opacity: var(--opacity-overlay);
+  background-color: var(--color-action-primary-hover);
+  color: var(--color-text-inverse);
+}
+
+.button.secondary .icon {
+  color: var(--color-action-primary);
 }
 
 .button.secondary:hover:not(:disabled) {
-  background-color: var(--color-green-200);
-  color: var(--color-green-1000);
+  background-color: var(--color-action-primary);
+  color: var(--color-text-inverse);
+}
+
+.button.secondary:hover:not(:disabled) .icon {
+  color: var(--color-text-inverse);
 }
 
 .button.tertiary:hover:not(:disabled) {

@@ -25,7 +25,7 @@
 
   /* action */
   --color-action-primary: var(--color-orange-500);
-  --color-action-primary-hover: var(--color-orange-300);
+  --color-action-primary-hover: var(--color-orange-600);
   --color-action-primary-active: var(--color-orange-700);
   --color-action-primary-disabled: var(--color-neutral-300);
   --color-action-secondary: var(--color-neutral-400);

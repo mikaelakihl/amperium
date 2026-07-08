@@ -124,7 +124,7 @@ export function Form() {
         <Button
           fullWidth
           type="reset"
-          iconLeft={<Trash color="var(--color-action-primary)" />}
+          iconLeft={<Trash />}
           variant="secondary"
         >
           {t('contact.form.clearForm')}
