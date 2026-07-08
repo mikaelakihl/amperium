@@ -17,7 +17,7 @@ export function NavMobile() {
 
       {menuOpen && (
         <div className={styles.menu}>
-          <ul className={styles.menuList}>
+          <ul className={styles.menuList} role="list">
             <li>
               <NavLink
                 className={({ isActive }) =>

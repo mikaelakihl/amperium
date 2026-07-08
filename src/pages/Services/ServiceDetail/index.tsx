@@ -38,7 +38,7 @@ export function ServiceDetail() {
             heading={t(detail.headingKey)}
             description={t(detail.descriptionKey)}
           />
-          <ul className={styles.pills}>
+          <ul className={styles.pills} role="list">
             {labels.map((label) => (
               <li key={label}>
                 <Pill>{label}</Pill>

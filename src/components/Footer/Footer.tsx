@@ -23,7 +23,7 @@ export function Footer() {
             <h2 className={`text-label-sm ${styles.heading}`}>
               {t('footer.links.services')}
             </h2>
-            <ul className={`text-body-sm ${styles.linkList}`}>
+            <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
                 <Link to={serviceDetailPath('service')}>Service</Link>
               </li>
@@ -43,7 +43,7 @@ export function Footer() {
             <h2 className={`text-label-sm ${styles.heading}`}>
               {t('footer.theCompany')}
             </h2>
-            <ul className={`text-body-sm ${styles.linkList}`}>
+            <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
                 <Link to="/om-oss">{t('footer.links.about')}</Link>
               </li>
@@ -59,7 +59,7 @@ export function Footer() {
             <h2 className={`text-label-sm ${styles.heading}`}>
               {t('footer.links.contact')}
             </h2>
-            <ul className={`text-body-sm ${styles.linkList}`}>
+            <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
                 <a href="tel:+46854524">08-854 524</a>
               </li>
