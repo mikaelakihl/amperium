@@ -26,7 +26,7 @@ export function ServiceDetail() {
       <div className={styles.serviceDetail}>
         <ButtonLink
           size="xs"
-          iconLeft={<ArrowLeft />}
+          iconLeft={<ArrowLeft aria-hidden="true" />}
           variant="link"
           to={servicesPath}
           className={styles.backLink}

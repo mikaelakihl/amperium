@@ -118,13 +118,17 @@ export function Form() {
         </p>
       )}
       <div className={styles.buttons}>
-        <Button fullWidth type="submit" iconLeft={<Send />}>
+        <Button
+          fullWidth
+          type="submit"
+          iconLeft={<Send aria-hidden="true" />}
+        >
           {t('contact.form.requestQuote')}
         </Button>
         <Button
           fullWidth
           type="reset"
-          iconLeft={<Trash />}
+          iconLeft={<Trash aria-hidden="true" />}
           variant="secondary"
         >
           {t('contact.form.clearForm')}

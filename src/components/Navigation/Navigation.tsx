@@ -19,7 +19,7 @@ export function Navigation() {
         <ButtonLink
           size="xs"
           href="tel:+46 8 854 524"
-          iconLeft={<PhoneOutgoing size={16} />}
+          iconLeft={<PhoneOutgoing size={16} aria-hidden="true" />}
         >
           {t('nav.callUs')}
         </ButtonLink>
