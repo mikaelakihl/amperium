@@ -10,12 +10,12 @@ export function ContactDetails() {
     <TitledCard label={t('contact.contactDetails')}>
       <div className={styles.contactInfo}>
         <ButtonLink
-          href="tel:08-854-224"
+          href="tel:+46854524"
           variant="link"
           className="text-body-sm"
           iconLeft={<Phone aria-hidden="true" size={16} />}
         >
-          08-854-224
+          08-854 524
         </ButtonLink>
         <ButtonLink
           href="mailto:info@amperium.se"
