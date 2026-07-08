@@ -2,10 +2,11 @@ import { Navigate, useParams } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft } from 'lucide-react';
 import { getServiceIdFromSlug, servicesPath } from '../../../routes/services';
-import { Pill } from '../../../components/Pill/Pill';
-import { ButtonLink } from '../../../components/ButtonLink/ButtonLink';
-import { PageIntro } from '../../../components/PageIntro/PageIntro';
+import { Pill } from '../../../components/ui/Pill/Pill';
+import { ButtonLink } from '../../../components/ui/ButtonLink/ButtonLink';
+import { PageIntro } from '../../../components/ui/PageIntro/PageIntro';
 import { serviceDetails } from './content';
+import { usePageTitle } from '../../../hooks/usePageTitle';
 import styles from './index.module.css';
 
 export function ServiceDetail() {
@@ -14,6 +15,8 @@ export function ServiceDetail() {
   const serviceId = slug ? getServiceIdFromSlug(slug) : undefined;
 
   const detail = serviceDetails.find((item) => item.id === serviceId);
+
+  usePageTitle(detail ? t(detail.headingKey) : '');
 
   if (!detail) {
     return <Navigate to={servicesPath} replace />;
@@ -26,7 +29,7 @@ export function ServiceDetail() {
       <div className={styles.serviceDetail}>
         <ButtonLink
           size="xs"
-          iconLeft={<ArrowLeft />}
+          iconLeft={<ArrowLeft aria-hidden="true" />}
           variant="link"
           to={servicesPath}
           className={styles.backLink}
@@ -38,7 +41,7 @@ export function ServiceDetail() {
             heading={t(detail.headingKey)}
             description={t(detail.descriptionKey)}
           />
-          <ul className={styles.pills}>
+          <ul className={styles.pills} role="list">
             {labels.map((label) => (
               <li key={label}>
                 <Pill>{label}</Pill>
@@ -53,7 +56,7 @@ export function ServiceDetail() {
             {t('services.detail.ctaHeading')}
           </h2>
           <ButtonLink className={styles.contactBtn} to="/kontakt">
-            {t('hero.contactUs')}
+            {t('common.contactUs')}
           </ButtonLink>
         </div>
       </div>

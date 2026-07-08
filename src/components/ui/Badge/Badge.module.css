@@ -1,0 +1,15 @@
+.badge {
+  background-color: var(--color-background-elevated);
+  min-width: 100px;
+  min-height: 100px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  border: 0.5px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-md);
+}

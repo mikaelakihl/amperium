@@ -1,0 +1,26 @@
+.statisticCard {
+  background-color: var(--color-background-elevated);
+  text-decoration: none;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  border: 0.5px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-md);
+  gap: 0;
+}
+
+.statisticCard p {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: var(--color-text-secondary);
+}
+
+.description {
+  color: var(--color-text-muted);
+}

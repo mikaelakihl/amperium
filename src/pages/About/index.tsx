@@ -1,10 +1,12 @@
 import { Trans, useTranslation } from 'react-i18next';
-import { PageIntro } from '../../components/PageIntro/PageIntro';
-import pageIntroStyles from '../../components/PageIntro/PageIntro.module.css';
-import { ContactCardList } from '../../components/ContactCardList/ContactCardList';
+import { PageIntro } from '../../components/ui/PageIntro/PageIntro';
+import pageIntroStyles from '../../components/ui/PageIntro/PageIntro.module.css';
+import { ContactCardList } from './components/ContactCardList/ContactCardList';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export function About() {
   const { t } = useTranslation();
+  usePageTitle(t('common.about'));
   return (
     <div className="container">
       <PageIntro

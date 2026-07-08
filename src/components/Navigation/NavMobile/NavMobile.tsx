@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { Hamburger } from '../../Hamburger/Hamburger';
+import { Hamburger } from '../../ui/Hamburger/Hamburger';
 import styles from './NavMobile.module.css';
 import { servicesPath } from '../../../routes/services';
 
@@ -12,12 +12,16 @@ export function NavMobile() {
   return (
     <nav className={styles.navbar}>
       <div>
-        <Hamburger open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
+        <Hamburger
+          open={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+          label={t('nav.toggleMenu')}
+        />
       </div>
 
       {menuOpen && (
         <div className={styles.menu}>
-          <ul className={styles.menuList}>
+          <ul className={styles.menuList} role="list">
             <li>
               <NavLink
                 className={({ isActive }) =>

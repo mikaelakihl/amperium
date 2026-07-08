@@ -1,9 +1,9 @@
-.benefitContainerMobile {
-  margin-top: var(--space-4xl);
-}
-
 .benefitContainerDesktop {
   display: none;
+}
+
+.benefitContainerMobile {
+  margin-top: var(--space-4xl);
 }
 
 @media (--md) {

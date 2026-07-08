@@ -16,7 +16,7 @@ describe('Services', () => {
     renderServices();
     expect(
       screen.getByRole('heading', {
-        level: 2,
+        level: 1,
         name: /våra tjänster|our services/i,
       })
     ).toBeInTheDocument();
@@ -31,6 +31,6 @@ describe('Services', () => {
 
   it('renders a card for every service', () => {
     renderServices();
-    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(3);
+    expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(3);
   });
 });

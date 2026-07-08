@@ -4,6 +4,12 @@ import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Camera, Copyright } from 'lucide-react';
 import { serviceDetailPath } from '../../routes/services';
+import {
+  PHONE_DISPLAY,
+  PHONE_HREF,
+  EMAIL,
+  EMAIL_HREF,
+} from '../../constants/contact';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -16,22 +22,25 @@ export function Footer() {
           <img src={logo} alt="Amperium" className={styles.logoImage} />
         </Link>
         <div className={styles.linkContainer}>
-          <nav className={styles.section} aria-label={t('footer.services')}>
+          <nav
+            className={styles.section}
+            aria-label={t('footer.links.services')}
+          >
             <h2 className={`text-label-sm ${styles.heading}`}>
-              {t('footer.services')}
+              {t('footer.links.services')}
             </h2>
-            <ul className={`text-body-sm ${styles.linkList}`}>
+            <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
                 <Link to={serviceDetailPath('service')}>Service</Link>
               </li>
               <li>
                 <Link to={serviceDetailPath('electrical')}>
-                  {t('footer.electricalInstallation')}
+                  {t('footer.links.electricalInstallation')}
                 </Link>
               </li>
               <li>
                 <Link to={serviceDetailPath('project')}>
-                  {t('footer.projectManagement')}
+                  {t('footer.links.projectManagement')}
                 </Link>
               </li>
             </ul>
@@ -40,25 +49,28 @@ export function Footer() {
             <h2 className={`text-label-sm ${styles.heading}`}>
               {t('footer.theCompany')}
             </h2>
-            <ul className={`text-body-sm ${styles.linkList}`}>
+            <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
-                <Link to="/om-oss">{t('footer.about')}</Link>
+                <Link to="/om-oss">{t('footer.links.about')}</Link>
               </li>
               <li>
-                <Link to="/kontakt">{t('footer.contact')}</Link>
+                <Link to="/kontakt">{t('footer.links.contact')}</Link>
               </li>
             </ul>
           </nav>
-          <div className={styles.section} aria-label={t('footer.contact')}>
+          <div
+            className={styles.section}
+            aria-label={t('footer.links.contact')}
+          >
             <h2 className={`text-label-sm ${styles.heading}`}>
-              {t('footer.contact')}
+              {t('footer.links.contact')}
             </h2>
-            <ul className={`text-body-sm ${styles.linkList}`}>
+            <ul className={`text-body-sm ${styles.linkList}`} role="list">
               <li>
-                <a href="tel:+46854524">08-854 524</a>
+                <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>
               </li>
               <li>
-                <a href="mailto:info@amperium.se">info@amperium.se</a>
+                <a href={EMAIL_HREF}>{EMAIL}</a>
               </li>
               <li>
                 <address>Klostervägen 3, Gustavsberg</address>

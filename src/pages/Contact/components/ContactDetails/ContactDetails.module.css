@@ -1,0 +1,13 @@
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contactInfo a {
+  color: var(--color-text-primary);
+}
+
+.contactInfo a svg {
+  color: var(--color-action-primary);
+}
