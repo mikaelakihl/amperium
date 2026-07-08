@@ -19,7 +19,6 @@
     "skipToContent": "Hoppa till innehåll"
   },
   "home": {
-    "title": "Hem",
     "aboutPreview": {
       "label": "$t(common.about)",
       "heading": "Det varma företaget där kvalité är ledordet",
@@ -64,13 +63,11 @@
     }
   },
   "about": {
-    "title": "$t(common.about)",
     "heading": "Möt teamet",
     "description": "<highlight>Med över 40 års samlad erfarenhet inom elbranschen</highlight> levererar Amperium Elektriska kvalité i alla led — både som installatör och projektledare.<br/>Från små uppdrag till nyckelfärdiga installationer för stora kunder, är målet alltid detsamma: att lyckas med projektet.",
     "note": "Amperium grundades 2023 av Jimmy Rittervall & Simon Kihl "
   },
   "services": {
-    "title": "$t(common.services)",
     "heading": "$t(common.ourServices)",
     "description": "Med lång erfarenhet inom el hjälper vi både privatpersoner och företag - snabbt, säkert och med hög kvalitet i varje uppdrag.<highlight> Utforska våra tjänster nedan</highlight>",
     "detail": {
