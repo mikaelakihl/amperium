@@ -8,7 +8,7 @@
   width: 100%;
   border-radius: var(--radius-sm);
   border: 0.5px solid var(--color-border-subtle);
-  box-shadow: var(--shadow-dark-md);
+  box-shadow: var(--shadow-md);
   gap: 0;
 }
 

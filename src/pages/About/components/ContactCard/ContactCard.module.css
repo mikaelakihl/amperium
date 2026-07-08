@@ -11,7 +11,7 @@
   justify-content: flex-start;
   border-radius: var(--radius-md);
   border: 0.5px solid var(--color-border-subtle);
-  box-shadow: var(--shadow-dark-md);
+  box-shadow: var(--shadow-md);
 }
 
 .contactInfo {

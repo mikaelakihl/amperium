@@ -11,9 +11,6 @@
   gap: var(--space-lg);
 }
 
-/* @media (--sm) {
-} */
-
 @media (--md) {
   .aboutPreview {
     grid-template-columns: repeat(2, 1fr);

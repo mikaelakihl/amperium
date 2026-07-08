@@ -11,5 +11,5 @@
   align-items: center;
   border-radius: var(--radius-lg);
   border: 0.5px solid var(--color-border-subtle);
-  box-shadow: var(--shadow-dark-md);
+  box-shadow: var(--shadow-md);
 }

@@ -11,10 +11,3 @@
 .contactInfo a svg {
   color: var(--color-action-primary);
 }
-
-/* @media (--md) {
-  .contactInfo {
-    flex-direction: row;
-
-  }
-} */
