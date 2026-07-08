@@ -7,11 +7,17 @@ interface PillProps {
   className?: string;
 }
 
-export function Pill({ children, variant = 'default', className = '' }: PillProps) {
+export function Pill({
+  children,
+  variant = 'default',
+  className = '',
+}: PillProps) {
   const variantClass = variant === 'secondary' ? styles.secondary : '';
 
   return (
-    <span className={`text-label-sm ${styles.pill} ${variantClass} ${className}`}>
+    <span
+      className={`text-label-sm ${styles.pill} ${variantClass} ${className}`}
+    >
       {children}
     </span>
   );
