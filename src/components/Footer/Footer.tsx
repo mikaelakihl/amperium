@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
-import logo from '../../assets/WhiteAmperium24x1024.png';
+import logo from '../../assets/AmperiumLogoWhite.svg';
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Camera, Copyright } from 'lucide-react';
