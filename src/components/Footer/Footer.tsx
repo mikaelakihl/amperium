@@ -16,9 +16,12 @@ export function Footer() {
           <img src={logo} alt="Amperium" className={styles.logoImage} />
         </Link>
         <div className={styles.linkContainer}>
-          <nav className={styles.section} aria-label={t('footer.services')}>
+          <nav
+            className={styles.section}
+            aria-label={t('footer.links.services')}
+          >
             <h2 className={`text-label-sm ${styles.heading}`}>
-              {t('footer.services')}
+              {t('footer.links.services')}
             </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
@@ -26,12 +29,12 @@ export function Footer() {
               </li>
               <li>
                 <Link to={serviceDetailPath('electrical')}>
-                  {t('footer.electricalInstallation')}
+                  {t('footer.links.electricalInstallation')}
                 </Link>
               </li>
               <li>
                 <Link to={serviceDetailPath('project')}>
-                  {t('footer.projectManagement')}
+                  {t('footer.links.projectManagement')}
                 </Link>
               </li>
             </ul>
@@ -42,16 +45,19 @@ export function Footer() {
             </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>
-                <Link to="/om-oss">{t('footer.about')}</Link>
+                <Link to="/om-oss">{t('footer.links.about')}</Link>
               </li>
               <li>
-                <Link to="/kontakt">{t('footer.contact')}</Link>
+                <Link to="/kontakt">{t('footer.links.contact')}</Link>
               </li>
             </ul>
           </nav>
-          <div className={styles.section} aria-label={t('footer.contact')}>
+          <div
+            className={styles.section}
+            aria-label={t('footer.links.contact')}
+          >
             <h2 className={`text-label-sm ${styles.heading}`}>
-              {t('footer.contact')}
+              {t('footer.links.contact')}
             </h2>
             <ul className={`text-body-sm ${styles.linkList}`}>
               <li>

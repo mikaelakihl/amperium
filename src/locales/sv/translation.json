@@ -122,11 +122,13 @@
   },
   "loading": "Laddar...",
   "footer": {
-    "services": "$t(common.services)",
-    "electricalInstallation": "$t(common.electricalInstallation)",
-    "projectManagement": "$t(common.projectManagement)",
-    "about": "$t(common.about)",
-    "contact": "$t(common.contact)",
+    "links": {
+      "services": "$t(common.services)",
+      "electricalInstallation": "$t(common.electricalInstallation)",
+      "projectManagement": "$t(common.projectManagement)",
+      "about": "$t(common.about)",
+      "contact": "$t(common.contact)"
+    },
     "theCompany": "Företaget",
     "allRightsReserved": "Alla rättigheter förbehållna"
   },
