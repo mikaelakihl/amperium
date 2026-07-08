@@ -10,9 +10,7 @@ export function Banner() {
         <li className="text-body-md">
           {t('home.banner.electricalInstallation')}
         </li>
-        <li className="text-body-md">
-          {t('home.banner.projectManagement')}
-        </li>
+        <li className="text-body-md">{t('home.banner.projectManagement')}</li>
       </ul>
     </div>
   );

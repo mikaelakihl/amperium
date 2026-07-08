@@ -118,11 +118,7 @@ export function Form() {
         </p>
       )}
       <div className={styles.buttons}>
-        <Button
-          fullWidth
-          type="submit"
-          iconLeft={<Send aria-hidden="true" />}
-        >
+        <Button fullWidth type="submit" iconLeft={<Send aria-hidden="true" />}>
           {t('contact.form.requestQuote')}
         </Button>
         <Button
