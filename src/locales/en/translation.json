@@ -6,7 +6,8 @@
     "about": "About",
     "contact": "Contact",
     "service": "Service",
-    "ourServices": "Our services"
+    "ourServices": "Our services",
+    "contactUs": "Contact us"
   },
   "nav": {
     "home": "Home",
@@ -75,7 +76,8 @@
     }
   },
   "contact": {
-    "title": "$t(common.contact)",
+    "heading": "$t(common.contactUs)",
+    "description": "<highlight>Fill in the form below and we'll get back to you with a free quote</highlight> — feel free to describe what you need help with so we can prepare.",
     "imageUnavailable": "No image available",
     "name": "Name",
     "epost": "E-mail",
@@ -87,8 +89,8 @@
       "required": "This field is required",
       "invalidEmail": "Enter a valid email address"
     },
-    "contactDetails": "Contactdetails",
-    "openingHours": "Openinghours",
+    "contactDetails": "Contact details",
+    "openingHours": "Opening hours",
     "monday": "Monday",
     "tuesday": "Tuesday",
     "wednesday": "Wednesday",
@@ -114,7 +116,7 @@
     "credit": "Credit rating",
     "slogan": "We make <br/> electricity <highlight>work</highlight>",
     "electricalInstallation&service": "Electricalinstallation & Service",
-    "contactUs": "Contact us",
+    "contactUs": "$t(common.contactUs)",
     "ourServices": "$t(common.ourServices)"
   },
 
