@@ -9,12 +9,10 @@
 }
 
 .heading {
-  color: var(--color-text-primary);
   margin: 0;
 }
 
 .description {
-  color: var(--color-text-primary);
   max-width: 50ch;
 }
 
