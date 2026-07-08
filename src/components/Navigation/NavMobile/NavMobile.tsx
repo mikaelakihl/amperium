@@ -12,7 +12,11 @@ export function NavMobile() {
   return (
     <nav className={styles.navbar}>
       <div>
-        <Hamburger open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
+        <Hamburger
+          open={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+          label={t('nav.toggleMenu')}
+        />
       </div>
 
       {menuOpen && (

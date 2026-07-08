@@ -16,6 +16,7 @@
     "contact": "$t(common.contact)",
     "languageSwitcher": "Change language",
     "callUs": "Call us",
+    "toggleMenu": "Toggle menu",
     "skipToContent": "Skip to content"
   },
   "home": {

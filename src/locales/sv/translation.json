@@ -16,6 +16,7 @@
     "contact": "$t(common.contact)",
     "languageSwitcher": "Byt språk",
     "callUs": "Ring oss",
+    "toggleMenu": "Öppna/stäng meny",
     "skipToContent": "Hoppa till innehåll"
   },
   "home": {
