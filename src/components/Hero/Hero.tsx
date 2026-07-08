@@ -24,7 +24,7 @@ export function Hero() {
           </h1>
           <div className={styles.buttonsDesktop}>
             <ButtonLink to="/kontakt" size="xs" fullWidth>
-              {t('home.hero.contactUs')}
+              {t('home.hero.buttons.contactUs')}
             </ButtonLink>
             <ButtonLink
               to={servicesPath}
@@ -32,7 +32,7 @@ export function Hero() {
               variant="secondary"
               fullWidth
             >
-              {t('home.hero.ourServices')}
+              {t('home.hero.buttons.ourServices')}
             </ButtonLink>
           </div>
         </div>
@@ -45,10 +45,10 @@ export function Hero() {
 
       <div className={styles.buttons}>
         <ButtonLink to="/kontakt" size="xs" fullWidth>
-          {t('home.hero.contactUs')}
+          {t('home.hero.buttons.contactUs')}
         </ButtonLink>
         <ButtonLink to={servicesPath} size="xs" variant="secondary" fullWidth>
-          {t('home.hero.ourServices')}
+          {t('home.hero.buttons.ourServices')}
         </ButtonLink>
       </div>
     </section>

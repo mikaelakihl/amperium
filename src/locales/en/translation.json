@@ -23,8 +23,10 @@
       "credit": "Credit rating",
       "slogan": "We make <br/> electricity <highlight>work</highlight>",
       "electricalInstallationAndService": "Electricalinstallation & Service",
-      "contactUs": "$t(common.contactUs)",
-      "ourServices": "$t(common.ourServices)"
+      "buttons": {
+        "contactUs": "$t(common.contactUs)",
+        "ourServices": "$t(common.ourServices)"
+      }
     },
     "banner": {
       "electricalInstallation": "$t(common.electricalInstallation)",

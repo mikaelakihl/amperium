@@ -23,8 +23,10 @@
       "credit": "Kreditvärdighet",
       "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
       "electricalInstallationAndService": "Elinstallation & service",
-      "contactUs": "$t(common.contactUs)",
-      "ourServices": "$t(common.ourServices)"
+      "buttons": {
+        "contactUs": "$t(common.contactUs)",
+        "ourServices": "$t(common.ourServices)"
+      }
     },
     "banner": {
       "electricalInstallation": "$t(common.electricalInstallation)",
