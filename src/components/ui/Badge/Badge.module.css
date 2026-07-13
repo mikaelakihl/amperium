@@ -1,0 +1,24 @@
+.badge {
+  background-color: var(--color-background-elevated);
+  min-width: 84px;
+  min-height: 84px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: var(--space-md);
+  font-size: var(--font-size-xs);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  border: 0.5px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-md);
+}
+
+@media (--md) {
+  .badge {
+    min-width: 72px;
+    min-height: 72px;
+    padding: var(--space-md);
+  }
+}

@@ -1,0 +1,138 @@
+.hero {
+  min-width: 200px;
+  min-height: 30svh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgb(0, 0, 0)),
+    url('../../../../assets/amperium-bil.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-inline: var(--space-lg);
+  padding-block: var(--space-md);
+  flex-direction: column;
+  display: flex;
+}
+
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding-block: var(--space-lg);
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.label {
+  color: var(--color-text-secondary);
+}
+
+.slogan {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-4xl);
+}
+
+.highlight {
+  color: var(--color-text-secondary);
+}
+
+.buttonsDesktop {
+  display: none;
+}
+
+.badgeContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-sm);
+}
+
+.ucLogoCrop {
+  display: inline-block;
+  width: 160px;
+  height: 56px;
+  overflow: hidden;
+}
+
+.ucLogoImg {
+  width: 240px;
+  height: 56px;
+}
+
+.dnbLogo {
+  width: 96px;
+  height: 51px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (--xs) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .badgeContainer {
+    flex-direction: column;
+  }
+}
+
+@media (--md) {
+  .hero {
+    background-position: center 60%;
+    padding-inline: var(--space-xl);
+    min-height: 40svh;
+    justify-content: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .buttonsDesktop {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .badgeContainer {
+    order: -1;
+    align-self: flex-end;
+    flex-direction: row;
+  }
+
+  .ucLogoCrop {
+    width: 130px;
+    height: 46px;
+  }
+
+  .ucLogoImg {
+    width: 195px;
+    height: 46px;
+  }
+
+  .dnbLogo {
+    width: 92px;
+    height: 49px;
+  }
+
+  .buttons {
+    display: none;
+  }
+}

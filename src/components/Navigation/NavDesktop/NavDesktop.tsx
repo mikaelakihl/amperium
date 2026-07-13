@@ -7,7 +7,7 @@ export function NavDesktop() {
   const { t } = useTranslation();
   return (
     <nav className={styles.navbar}>
-      <ul className={styles.menuList}>
+      <ul className={styles.menuList} role="list">
         <li>
           <NavLink
             className={({ isActive }) =>

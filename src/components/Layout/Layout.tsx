@@ -1,7 +1,7 @@
 import { Navigation } from '../Navigation/Navigation';
 import { Link, Outlet } from 'react-router';
 import styles from './Layout.module.css';
-import logo from '../../assets/WhiteAmperium24x1024.png';
+import logo from '../../assets/AmperiumLogoWhite.svg';
 import { useTranslation } from 'react-i18next';
 import { Footer } from '../Footer/Footer';
 

@@ -1,3 +1,7 @@
+.cards {
+  padding-top: var(--space-lg);
+}
+
 .cardContainer {
   display: flex;
   flex-direction: column;
@@ -5,18 +9,14 @@
   gap: var(--space-md);
 }
 
-.cards {
-  padding-top: var(--space-lg);
-}
-
 @media (--md) {
-  .cardContainer {
-    flex-direction: row;
-    justify-content: center;
-  }
-
   .cards {
     padding-inline: var(--space-4xl);
     padding-top: var(--space-lg);
+  }
+
+  .cardContainer {
+    flex-direction: row;
+    justify-content: center;
   }
 }

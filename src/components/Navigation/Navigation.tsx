@@ -1,9 +1,10 @@
 import { NavMobile } from './NavMobile/NavMobile';
 import { NavDesktop } from './NavDesktop/NavDesktop';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
-import { ButtonLink } from '../ButtonLink/ButtonLink';
+import { ButtonLink } from '../ui/ButtonLink/ButtonLink';
 import { PhoneOutgoing } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { PHONE_HREF } from '../../constants/contact';
 import styles from './Navigation.module.css';
 
 export function Navigation() {
@@ -18,8 +19,8 @@ export function Navigation() {
       <div className={styles.actionButton}>
         <ButtonLink
           size="xs"
-          href="tel:+46 8 854 524"
-          iconLeft={<PhoneOutgoing size={16} />}
+          href={PHONE_HREF}
+          iconLeft={<PhoneOutgoing size={16} aria-hidden="true" />}
         >
           {t('nav.callUs')}
         </ButtonLink>

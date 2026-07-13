@@ -1,26 +1,3 @@
-.heading {
-  color: var(--color-text-muted);
-  margin: 0;
-}
-
-a {
-  color: var(--color-action-secondary);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-action-primary);
-}
-
-address {
-  color: var(--color-action-secondary);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -42,6 +19,61 @@ ul {
   text-align: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 44px;
+  width: auto;
+  opacity: 80%;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.heading {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-action-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-action-primary);
+}
+
+address {
+  color: var(--color-action-secondary);
+}
+
 .bottomRow {
   display: flex;
   flex-direction: column;
@@ -61,38 +93,6 @@ ul {
   margin: 0;
 }
 
-.logoImage {
-  height: 44px;
-  width: auto;
-  opacity: 80%;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.linkContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-xl);
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-md);
-}
-
-.linkList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-xs);
-}
-
 @media (--md) {
   .footer {
     padding-inline: var(--space-2xl);
@@ -103,11 +103,6 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-  }
-
-  .bottomRow {
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .logoImage {
@@ -126,5 +121,10 @@ ul {
 
   .linkList {
     align-items: flex-start;
+  }
+
+  .bottomRow {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
