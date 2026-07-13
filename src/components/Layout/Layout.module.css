@@ -46,6 +46,6 @@
 
 @media (--md) {
   .header {
-    padding-inline: var(--space-2xl);
+    padding-inline: var(--space-xl);
   }
 }
