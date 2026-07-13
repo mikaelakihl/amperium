@@ -47,6 +47,7 @@ export function Hero() {
             >
               <span className={styles.ucLogoCrop}>
                 <img
+                  className={styles.ucLogoImg}
                   src="https://www.uc.se/ucsigill2/sigill?org=559429-8407&language=swe&product=lsa&special=&fontcolor=w&type=png"
                   alt=""
                   style={{ border: 0 }}
@@ -60,10 +61,9 @@ export function Hero() {
               target="_blank"
             >
               <img
+                className={styles.dnbLogo}
                 src="https://ratinglogo.bisnode.com/2837623899972697505228558.svg"
                 alt=""
-                width={120}
-                height={64}
               />
             </a>
           </Badge>
