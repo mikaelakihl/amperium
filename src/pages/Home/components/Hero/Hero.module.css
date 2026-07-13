@@ -2,8 +2,8 @@
   min-width: 200px;
   min-height: 30svh;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.771), rgb(0, 0, 0)),
-    url('../../../../assets/amperium-bil-edited.png');
+    linear-gradient(rgba(0, 0, 0, 0.45), rgb(0, 0, 0)),
+    url('../../../../assets/amperium-bil.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
