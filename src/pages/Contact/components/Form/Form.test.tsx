@@ -27,10 +27,7 @@ function getResetButton() {
 
 describe('Form', () => {
   beforeEach(() => {
-    vi.stubGlobal(
-      'fetch',
-      vi.fn().mockResolvedValue({ ok: true } as Response)
-    );
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true } as Response));
   });
 
   afterEach(() => {
