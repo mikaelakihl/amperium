@@ -9,7 +9,7 @@ export const openingHours: DayHours[] = [
   { dayKey: 'tuesday', hours: '07:00 – 17:00' },
   { dayKey: 'wednesday', hours: '07:00 – 17:00' },
   { dayKey: 'thursday', hours: '07:00 – 17:00' },
-  { dayKey: 'friday', hours: '07:00 – 16:00' },
+  { dayKey: 'friday', hours: '07:00 – 17:00' },
   { dayKey: 'saturday', hours: '', closed: true },
   { dayKey: 'sunday', hours: '', closed: true },
 ];
