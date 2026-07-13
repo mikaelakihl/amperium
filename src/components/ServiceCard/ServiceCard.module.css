@@ -27,9 +27,11 @@
   flex-direction: column;
   gap: var(--space-sm);
 }
+.contentContainer h2,
 .contentContainer h3 {
   color: var(--color-text-primary);
 }
+.contentContainer h2,
 .contentContainer h3,
 .contentContainer p {
   margin: 0;
