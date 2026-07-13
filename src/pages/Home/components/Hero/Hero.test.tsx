@@ -15,7 +15,7 @@ describe('Hero', () => {
   it('renders the slogan as the page heading', () => {
     renderHero();
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      /fungera|work/i
+      /trygg|secure/i
     );
   });
 

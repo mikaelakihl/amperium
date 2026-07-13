@@ -22,7 +22,7 @@
   "home": {
     "hero": {
       "credit": "Credit rating",
-      "slogan": "We make <br/> electricity <highlight>work</highlight>",
+      "slogan": "Secure <highlight>electrical- <br/>  installations</highlight>",
       "electricalInstallationAndService": "Electricalinstallation & Service",
       "buttons": {
         "contactUs": "$t(common.contactUs)",
@@ -42,7 +42,7 @@
     "statistic": {
       "years": "Years in business",
       "projects": "Completed projects",
-      "certified": "Certified electricians"
+      "percent": "Quality"
     },
     "servicesPreview": {
       "label": "What we do",
@@ -65,7 +65,7 @@
     "benefitBanner": {
       "certified": {
         "title": "Certified",
-        "description": "All our electricians are certified"
+        "description": "Certfified electrical installer"
       },
       "response": {
         "title": "Fast response",
@@ -123,7 +123,8 @@
       "success": "Thanks! We'll be in touch shortly.",
       "errors": {
         "required": "This field is required",
-        "invalidEmail": "Enter a valid email address"
+        "invalidEmail": "Enter a valid email address",
+        "submitFailed": "Something went wrong. Please try again or call us instead."
       }
     },
     "hours": {

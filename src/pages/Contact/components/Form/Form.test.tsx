@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Form } from './Form';
@@ -26,6 +26,14 @@ function getResetButton() {
 }
 
 describe('Form', () => {
+  beforeEach(() => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true } as Response));
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
+  });
+
   it('renders the name, email and message fields', () => {
     renderForm();
     const { name, email, message } = getFields();
@@ -75,11 +83,30 @@ describe('Form', () => {
     await user.click(getSubmitButton());
 
     expect(
-      screen.getByText(/tack! vi hör av oss|thanks! we'll be in touch/i)
+      await screen.findByText(/tack! vi hör av oss|thanks! we'll be in touch/i)
     ).toBeInTheDocument();
     expect(name).toHaveValue('');
     expect(email).toHaveValue('');
     expect(message).toHaveValue('');
+  });
+
+  it('shows a submit error when the request fails', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue({ ok: false } as Response)
+    );
+    const user = userEvent.setup();
+    renderForm();
+    const { name, email, message } = getFields();
+
+    await user.type(name, 'Kalle Anka');
+    await user.type(email, 'kalle@example.com');
+    await user.type(message, 'Hej, jag vill ha en offert.');
+    await user.click(getSubmitButton());
+
+    expect(
+      await screen.findByText(/något gick fel|something went wrong/i)
+    ).toBeInTheDocument();
   });
 
   it('clears errors and the success message when the form is reset', async () => {

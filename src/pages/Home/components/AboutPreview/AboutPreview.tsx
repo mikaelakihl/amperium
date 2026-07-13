@@ -20,10 +20,7 @@ export function AboutPreview() {
           title="500+"
           description={t('home.statistic.projects')}
         />
-        <StatisticCard
-          title="100%"
-          description={t('home.statistic.certified')}
-        />
+        <StatisticCard title="100%" description={t('home.statistic.percent')} />
       </div>
     </section>
   );

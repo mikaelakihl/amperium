@@ -4,6 +4,7 @@ import { Input } from '../../../../components/ui/Input/Input';
 import { Textarea } from '../../../../components/ui/Textarea/Textarea';
 import { Button } from '../../../../components/ui/Button/Button';
 import { Send, Trash } from 'lucide-react';
+import { FORM_ENDPOINT } from '../../../../constants/contact';
 import styles from './Form.module.css';
 
 export function Form() {
@@ -12,12 +13,14 @@ export function Form() {
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    const nameInput = form.elements.namedItem('fullName') as HTMLInputElement;
-    const emailInput = form.elements.namedItem('epost') as HTMLInputElement;
+    const nameInput = form.elements.namedItem('name') as HTMLInputElement;
+    const emailInput = form.elements.namedItem('email') as HTMLInputElement;
     const messageInput = form.elements.namedItem(
       'message'
     ) as HTMLTextAreaElement;
@@ -65,9 +68,27 @@ export function Form() {
       return;
     }
 
-    // TODO: skicka formulärdata när mail-koppling finns på plats
-    form.reset();
-    setSubmitted(true);
+    setSubmitError('');
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      form.reset();
+      setSubmitted(true);
+    } catch {
+      setSubmitError(t('contact.form.errors.submitFailed'));
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   function handleReset() {
@@ -75,6 +96,7 @@ export function Form() {
     setEmailError('');
     setMessageError('');
     setSubmitted(false);
+    setSubmitError('');
   }
 
   return (
@@ -84,10 +106,15 @@ export function Form() {
       onSubmit={handleSubmit}
       onReset={handleReset}
     >
+      <input
+        type="hidden"
+        name="_subject"
+        value="Jag vill ha hjälp! - Ny offertförfrågan"
+      />
       <Input
         label={t('contact.form.name')}
         id="name"
-        name="fullName"
+        name="name"
         placeholder={t('contact.form.name')}
         required
         invalid={!!nameError}
@@ -96,7 +123,7 @@ export function Form() {
       <Input
         label={t('contact.form.epost')}
         id="epost"
-        name="epost"
+        name="email"
         type="email"
         placeholder={t('contact.form.epost')}
         required
@@ -117,8 +144,18 @@ export function Form() {
           {t('contact.form.success')}
         </p>
       )}
+      {submitError && (
+        <p role="alert" className={`text-body-sm ${styles.error}`}>
+          {submitError}
+        </p>
+      )}
       <div className={styles.buttons}>
-        <Button fullWidth type="submit" iconLeft={<Send aria-hidden="true" />}>
+        <Button
+          fullWidth
+          type="submit"
+          loading={isSubmitting}
+          iconLeft={<Send aria-hidden="true" />}
+        >
           {t('contact.form.requestQuote')}
         </Button>
         <Button
