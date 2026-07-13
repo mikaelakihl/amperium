@@ -119,7 +119,8 @@
       "success": "Tack! Vi hör av oss inom kort.",
       "errors": {
         "required": "Fältet är obligatoriskt",
-        "invalidEmail": "Ange en giltig e-postadress"
+        "invalidEmail": "Ange en giltig e-postadress",
+        "submitFailed": "Något gick fel. Försök igen eller ring oss istället."
       }
     },
     "hours": {

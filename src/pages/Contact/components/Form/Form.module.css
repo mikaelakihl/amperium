@@ -8,6 +8,10 @@
   color: var(--color-feedback-success);
 }
 
+.error {
+  color: var(--color-feedback-danger);
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
