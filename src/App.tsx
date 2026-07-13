@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -7,21 +6,9 @@ import { ServiceDetail } from './pages/Services/ServiceDetail';
 import { Contact } from './pages/Contact';
 import './App.css';
 import { Layout } from './components/Layout/Layout';
-import { LoadingPage } from './components/LoadingPage/LoadingPage';
 import { servicesSegment } from './routes/services';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingPage />;
-  }
-
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
