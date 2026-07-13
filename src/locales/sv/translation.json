@@ -22,7 +22,7 @@
   "home": {
     "hero": {
       "credit": "Kreditvärdighet",
-      "slogan": "Vi får elen <br/> att <highlight>fungera</highlight>",
+      "slogan": "Trygga <highlight>el-<br/> installationer</highlight>",
       "electricalInstallationAndService": "Elinstallation & service",
       "buttons": {
         "contactUs": "$t(common.contactUs)",
