@@ -22,7 +22,7 @@ export function AboutPreview() {
         />
         <StatisticCard
           title="100%"
-          description={t('home.statistic.certified')}
+          description={t('home.statistic.percent')}
         />
       </div>
     </section>
