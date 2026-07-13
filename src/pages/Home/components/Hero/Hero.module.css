@@ -22,9 +22,10 @@ h1 {
 
 .wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: var(--space-md);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding-block: var(--space-lg);
 }
 
 .heroText {
@@ -52,7 +53,7 @@ h1 {
 
 .badgeContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--space-sm);
 }
 
@@ -79,6 +80,18 @@ h1 {
   gap: var(--space-md);
 }
 
+@media (--xs) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .badgeContainer {
+    flex-direction: column;
+  }
+}
+
 @media (--md) {
   .hero {
     background-position: center 60%;
@@ -102,8 +115,6 @@ h1 {
     order: -1;
     align-self: flex-end;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: var(--space-sm);
   }
 
   .ucLogoCrop {
