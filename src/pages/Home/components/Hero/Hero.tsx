@@ -38,8 +38,35 @@ export function Hero() {
         </div>
 
         <div className={styles.badgeContainer}>
-          <Badge />
-          <Badge />
+          <Badge>
+            <a
+              href="https://www.uc.se/risksigill2/?showorg=559429-8407&language=swe&special="
+              title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={styles.ucLogoCrop}>
+                <img
+                  src="https://www.uc.se/ucsigill2/sigill?org=559429-8407&language=swe&product=lsa&special=&fontcolor=w&type=png"
+                  alt=""
+                  style={{ border: 0 }}
+                />
+              </span>
+            </a>
+          </Badge>
+          <Badge>
+            <a
+              href="https://www.dnb.com/sv-se/om-oss/kreditvarderingsmodell-foretag/"
+              target="_blank"
+            >
+              <img
+                src="https://ratinglogo.bisnode.com/2837623899972697505228558.svg"
+                alt=""
+                width={120}
+                height={64}
+              />
+            </a>
+          </Badge>
         </div>
       </div>
 
